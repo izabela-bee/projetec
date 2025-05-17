@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,17 +22,22 @@
     <main class="principal">
         <section class="principal-secao">
             <div class="principal-secao-titulo">
-                <h2 class="principal-secao-titulo-conteudo">Login</h2>
+                <h2 class="principal-secao-titulo-conteudo">Registrar</h2>
             </div>
             <form class="principal-formulario" data-form>
 
                 <label for="registro" class="principal-formulario-label">Registro Acadêmico:</label>
                 <input id="registro" class="principal-formulario-input" name="registro" type="text" required>
 
+                <label for="email" class="principal-formulario-label">Email:</label>
+                <input id="email" class="principal-formulario-input" name="email" type="email" required>
+
                 <label for="senha" class="principal-formulario-label">Senha:</label>
                 <input id="senha" class="principal-formulario-input" name="senha" type="password" required>
 
-                <a href="#" class="principal-formulario-esqueceu">Esqueceu sua senha?</a>
+                <label for="senha-confirm" class="principal-formulario-label">Confirmar senha:</label>
+                <input id="senha-confirm" class="principal-formulario-input" name="senha-confirm" type="password" required>
+                <span id="erro-senha" class="erro-mensagem"></span>
 
                 <input class="principal-formulario-submit" id="entrar" name="entrar" value="Entrar" type="submit" onclick="entrar()">
 
@@ -47,18 +52,29 @@
 
 <script>
     window.onload = function () {
-        const formulario = document.querySelector('[data-form]');
+    const formulario = document.querySelector('[data-form]');
 
-        formulario.addEventListener("submit", function (event) {
-            event.preventDefault();
+    formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-            const registro = document.getElementById("registro").value.trim();
-            const senha = document.getElementById("senha").value.trim();
+        const registro = document.getElementById("registro").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const senha = document.getElementById("senha").value.trim();
+        const senhaConfirm = document.getElementById("senha-confirm").value.trim();
+        const erroSenha = document.getElementById("erro-senha");
 
-            if (registro !== "" && senha !== "") {
+        erroSenha.textContent = "";
+
+        if (registro !== "" && email !== "" && senha !== "" && senhaConfirm !== "") {
+            if (senha === senhaConfirm) {
                 window.location.href = "pagina-inicial.html";
+            } else {
+                erroSenha.textContent = "As senhas devem ser idênticas";
             }
-        });
-    };
+        } else {
+            erroSenha.textContent = "Por favor, preencha todos os campos.";
+        }
+    });
+};
 </script>
 </html>
