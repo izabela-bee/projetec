@@ -93,7 +93,6 @@ body{
     transition: 0.5s;
 }
 
-
 .principal-formulario-submit{
     padding: 20px;
     width: 60%;
@@ -114,38 +113,7 @@ body{
     box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.6);
 }
 
-.principal-formulario-esqueceu{
-    margin-left: 15rem;
-    margin-top: 1.2rem;
-    text-decoration: none;
-    color: var(--cor-termos);
-}
-
-.principal-formulario-esqueceu:hover{
-    text-decoration: underline;
-    opacity: 0.8;
-    transition:  1.2s;
-}
-
-
-/* RODAPE */
-
-.rodape{
-    position: absolute;
-    top: 95%;
-    right: 4%;
-    margin-bottom: 20px;
-    color: var(--cor-termos);
-}
-
-.rodape-conteudo{
-    text-decoration: none;
-}
-
-.rodape-conteudo:hover{
-    opacity: 0.6;
-    transition: 0.6s;
-}
+/* diferença entre as senhas inseridas */
 
 .erro-mensagem {
     color: red;
