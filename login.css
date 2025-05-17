@@ -1,0 +1,148 @@
+:root{
+    --verde-background: #4AB91B;
+    --verde-claro: #4FEC0C;
+    --cinza-input: #D9D9D9;
+    --cor-termos: #04067B;
+    --fonte-titulo: "Konkhmer Sleokchher", system-ui;
+    --fonte-texto: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4AB91B;
+    font-family: var(--fonte-texto);
+    height: 100vh;
+}
+
+/* LOGO */
+
+.cabecalho{
+    padding: 2rem;
+    position: absolute;
+    left: 2%;
+}
+
+.cabecalho-logo-conteudo{
+    width: 18rem;
+    height: 5.3rem;
+}
+
+/* FORMULÁRIO DE REGISTRO */
+
+.principal{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    align-self: center;
+    
+}
+
+.principal-secao{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    height: 80%;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+}
+
+.principal-secao-titulo{
+    position: absolute;
+    top: 13%;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.principal-formulario{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.principal-formulario-label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 60px 0 5px 0;
+}
+
+.principal-formulario-input {
+    width: 400px;
+    padding: 10px 4px;
+    font-size: 1.2rem;
+    background-color: var(--cinza-input);
+    border-style: none;
+    border-radius: 8px;
+}
+
+.principal-formulario-input:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.338);
+    transition: 0.5s;
+}
+
+
+.principal-formulario-submit{
+    padding: 20px;
+    width: 60%;
+    margin: 75px auto 0 auto;
+    border-radius: 20px;
+    background-color: var(--verde-claro);
+    border-style: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.principal-formulario-submit:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    color: black;
+    outline: none;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.6);
+}
+
+.principal-formulario-esqueceu{
+    margin-left: 15rem;
+    margin-top: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-termos);
+}
+
+.principal-formulario-esqueceu:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+    transition:  1.2s;
+}
+
+
+/* RODAPE */
+
+.rodape{
+    position: absolute;
+    top: 95%;
+    right: 4%;
+    margin-bottom: 20px;
+    color: var(--cor-termos);
+}
+
+.rodape-conteudo{
+    text-decoration: none;
+}
+
+.rodape-conteudo:hover{
+    opacity: 0.6;
+    transition: 0.6s;
+}
