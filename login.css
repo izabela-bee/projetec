@@ -80,7 +80,8 @@ body{
 }
 
 .principal-formulario-input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 10px 4px;
     font-size: 1.2rem;
     background-color: var(--cinza-input);
@@ -114,15 +115,73 @@ body{
     box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.6);
 }
 
-.principal-formulario-esqueceu{
-    margin-left: 15rem;
-    margin-top: 1.2rem;
-    text-decoration: none;
-    color: var(--cor-termos);
+@media (max-width: 1024px) {
+    .principal {
+        width: 60%;
+    }
+
+    .principal-formulario-input {
+        width: 100%;
+    }
+
+    .principal-formulario-submit {
+        width: 80%;
+    }
+
 }
 
-.principal-formulario-esqueceu:hover{
-    text-decoration: underline;
-    opacity: 0.8;
-    transition:  1.2s;
+@media (max-width: 768px) {
+    .cabecalho {
+        text-align: center;
+        position: static;
+        padding: 1rem;
+    }
+
+    .cabecalho-logo-conteudo {
+        width: 60%;
+        height: auto;
+    }
+
+    .principal {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .principal-secao-titulo {
+        position: static;
+        margin-bottom: 1.5rem;
+    }
+
+    .principal-formulario-label {
+        padding-top: 30px;
+    }
+
+    .principal-formulario-submit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-logo-conteudo {
+        width: 80%;
+    }
+
+    .principal-secao {
+        padding: 1.2rem;
+        height: auto;
+    }
+
+    .principal-formulario-label {
+        font-size: 1rem;
+    }
+
+    .principal-formulario-input {
+        font-size: 1rem;
+    }
+
+    .principal-formulario-submit {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
 }
