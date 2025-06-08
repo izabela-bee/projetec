@@ -2,6 +2,9 @@
     --cor-fundo: #358B11;
     --cor-menu: #4AB91B;
     --cor-hover:#4ab91b78;
+    --cor-margem:#2A6C0B;
+    --cor-hover:#1f6502;
+    --cor-main: #FFFFFF;
     --fonte-padrao: "Inter", sans-serif;
 }
 
@@ -39,14 +42,17 @@ a {
 
 
 .cabecalho-navegacao-menu-imagem{
-    width: 10rem;
-    padding: 4.6vh 60px;
+    width: auto;
+    height: 13vh;
+    padding: 4vh 40px;
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .cabecalho-navegacao-menu-imagem:hover{
     cursor: pointer;
-    background-color: #358B11;
-    transition: 2s;
+    background-color: var(--cor-fundo);
+    transition: 0.4s;
 }
 
 .cabecalho-navegacao-menu-elementos{
@@ -97,7 +103,7 @@ a {
 }
 
 .cabecalho-navegacao-menu-perfil-elemento:hover{
-    background-color: #1f6502;
+    background-color: var(--cor-hover);
     transition: 1.2s;
     cursor: pointer;
 }
@@ -114,13 +120,16 @@ a {
 }
 
 .cabecalho-navegacao-menu-perfil-imagem{
-    width: 10rem;
-    padding: 3.3vh 50px;
+    width: auto;
+    height: 13vh;
+    padding: 2.5vh 35px;
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .cabecalho-navegacao-menu-perfil-imagem:hover {
     cursor: pointer;
-    background-color: #358B11;
-    transition: 2s;
+    background-color: var(--cor-fundo);
+    transition: 0.4s;
 }
 
