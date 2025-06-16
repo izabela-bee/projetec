@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <a href="inicial">
-                <img class="cabecalho-navegacao-menu-logo" src="/img/menuItens/logo.png" alt="Lodo do site MoniFacil">
+                <img class="cabecalho-navegacao-menu-logo" src="/img/menuItens/logo.png" alt="Logo do site MoniFacil">
             </a>
 
             <div class="cabecalho-navegacao-menu-perfil">
