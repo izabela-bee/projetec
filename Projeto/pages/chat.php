@@ -39,7 +39,7 @@ include_once "header.php";
                 <div class="caixa-elet-analogica">
                     <div>
                         <h1 class="nome-monitor">Gabriel</h1>
-                        <p class="titulo-monitor-caixa-nome">Elet. Analóagica</p>
+                        <p class="titulo-monitor-caixa-nome">Elet. Analógica</p>
                     </div>
                 </div>
                 <img class="icone-contato" src="/img/fotosPerfil/perfilPadrao.png">
