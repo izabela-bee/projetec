@@ -23,7 +23,7 @@
                     <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                 </ul>
             </div>
-            <a href="inicial">
+            <a href="inicial.php">
                 <img class="cabecalho-navegacao-menu-logo" src="../public/img/menuItens/logo.png" alt="Logo do site MoniFacil">
             </a>
 
