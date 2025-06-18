@@ -1,4 +1,4 @@
-<script src="/js/menu.js"></script>
+<script src="../public/js/menu.js"></script>
 
 <?php if(!empty($scripts)) foreach($scripts as $script): ?>
 
