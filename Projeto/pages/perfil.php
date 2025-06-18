@@ -12,7 +12,7 @@ include_once "header.php";
                     <h1 class="formulario-superior-titulo">Meu perfil</h1>
                     <label class="formulario-superior-label">
                         <input class="formulario-superior-label-input" type="file" name="fotoPerfil">
-                        <img class="formulario-superior-label-img" src="/img/fotosPerfil/avatar.png" alt="">
+                        <img class="formulario-superior-label-img" src="public/img/fotosPerfil/avatar.png" alt="">
                     </label>
                 </div>
                 <div class="formulario-superior-infosUser">
@@ -48,6 +48,6 @@ include_once "header.php";
     </main>
 
 <?php
-    
+    $scripts = ['menu'];
     include_once "footer.php";
 ?>

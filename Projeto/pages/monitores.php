@@ -43,6 +43,6 @@ include_once "header.php";
     </main>
 
 <?php
-    
+    $scripts = ['menu'];
     include_once "footer.php";
 ?>

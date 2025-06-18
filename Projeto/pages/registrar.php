@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="public/css/registrar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +16,7 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho-logo">
-            <img src="../img/menuItens/logo.png" alt="Logo monifacil" class="cabecalho-logo-conteudo">
+            <img src="public/img/menuItens/logo.png" alt="Logo monifacil" class="cabecalho-logo-conteudo">
         </div>
     </header>
 
