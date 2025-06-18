@@ -8,6 +8,7 @@ $url = explode('?', $url)[0];
 
 $url = trim($url, '/');
 
+var_dump($url);
 
 $url = preg_replace('#^public/#', '', $url);
 

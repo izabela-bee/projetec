@@ -15,7 +15,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Matemática</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -24,7 +24,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome-lucas">
                 <div class="caixa-historia">
@@ -33,7 +33,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">História</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-elet-analogica">
@@ -42,7 +42,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Elet. Analógica</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-biologia">
@@ -51,7 +51,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Biologia</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -60,7 +60,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -69,7 +69,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -78,7 +78,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -87,7 +87,7 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
             <div class="caixa-nome">
                 <div class="caixa-portugues">
@@ -96,13 +96,13 @@ include_once "header.php";
                         <p class="titulo-monitor-caixa-nome">Português</p>
                     </div>
                 </div>
-                <img class="icone-contato" src="public/img/fotosPerfil/perfilPadrao.png">
+                <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
         </div>
         <div class="fundo">
             
             <div class="cabecalho-fundo">
-                <img class="icone-cabecalho" src="public/img/fotosPerfil/perfilPadrao.png" alt="icone">
+                <img class="icone-cabecalho" src="../public/img/fotosPerfil/perfilPadrao.png" alt="icone">
                 <div class="nome-titulo-monitor">
                     <h2>Lucas</h2>
                     <p class="titulo-monitor-cabecalho">Monitor de História</p>
@@ -125,12 +125,12 @@ include_once "header.php";
             <div class="input-container">
                 <form class="form-input" method="post">
                     <label>
-                        <img class="icone-file" width="20px" height="20px" src="public/img/formsComponents/anexar.png" alt="icone file">
+                        <img class="icone-file" width="20px" height="20px" src="../public/img/formsComponents/anexar.png" alt="icone file">
                         <input type="file" name="file">
                     </label>
                     <input type="text" name="text" placeholder="Mensagem">
                     <label>
-                        <img class="icone-microfone" src="public/img/formsComponents/microfone.png" alt="icone microfone">
+                        <img class="icone-microfone" src="../public/img/formsComponents/microfone.png" alt="icone microfone">
                         <input type="button" name="microfone">
                     </label>
                 </form>
