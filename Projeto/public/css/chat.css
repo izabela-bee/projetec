@@ -330,14 +330,11 @@ input{
     padding: 10px;
     font-size: 1rem;
     border: transparent;
-    background-color: lightgray;
+    background-color: #e3e3e3:
     color: rgba(0, 0, 0, 0.721);
 }
 input::placeholder{
     color: rgba(0, 0, 0, 0.721);
-}
-input:focus{
-    outline: transparent;
 }
 input[type="file"]{
     display: none;
