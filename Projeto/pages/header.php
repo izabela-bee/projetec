@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo !empty($titlePage) ? $titlePage : 'MoniFácil'; ?></title>
     <link rel="stylesheet" href="../public/css/menu.css">
+    <link rel="icon" href="../public/img/menuItens/icone.png" type="image/png">
     <link rel="stylesheet" href="../public/css/<?php echo !empty($nameCSS) ? $nameCSS : ''; ?>.css">
 </head>
 
