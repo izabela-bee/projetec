@@ -125,7 +125,7 @@ include_once "header.php";
             <div class="input-container">
                 <form class="form-input" method="post">
                     <label>
-                        <img class="icone-file" width="20px" height="20px" src="../public/img/formsComponents/anexos.png" alt="icone file">
+                        <img class="icone-file" width="20px" height="20px" src="../public/img/formsComponents/anexos.png" alt="icone anexo">
                         <input type="file" name="file">
                     </label>
                     <input type="text" name="text" placeholder="Mensagem">
