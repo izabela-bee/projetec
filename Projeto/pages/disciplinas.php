@@ -12,9 +12,12 @@ include_once "header.php";
         </div>
         <div class="disciplina">
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Matemática</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Matemática</h2>
+                    <button class="toggle-btn" data-target="matematica-cards">▼</button>
+                </div>
             
-                <div class="cards-container">
+                <div class="cards-container" id="cards-matematica" data-closed="true">
                     
                     <article class="card-monitoria matematica-card">
                         <header class="card-cabecalho">
@@ -236,41 +239,89 @@ include_once "header.php";
             </section>
                 
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Português</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Português</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-portugues" data-closed="true">
+
+                </div>
             </section>
     
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">História</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">História</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-historia" data-closed="true">
+
+                </div>
             </section>
     
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Geografia</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Geografia</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-geografia" data-closed="true">
+
+                </div>
             </section>
 
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Biologia</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Biologia</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-biologia" data-closed="true">
+
+                </div>
             </section>
             
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Química</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Química</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-quimica" data-closed="true">
+
+                </div>
             </section>
 
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Física</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Física</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-fisica" data-closed="true">
+
+                </div>
             </section>
 
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Sociologia</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Sociologia</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-sociologia" data-closed="true">
+
+                </div>
             </section>
 
             <section class="disciplina-secao">
-                <h2 class="disciplina-titulo">Filosofia</h2>
+                <div class="disciplina-header">
+                    <h2 class="disciplina-titulo">Filosofia</h2>
+                    <button class="toggle-btn" type="button">▼</button>
+                </div>
+                <div class="cards-container" id="cards-filosofia" data-closed="true">
+
+                </div>
             </section>
         </div>
     </main>
 
 <?php
-    $scripts = ['menu'];
+    $scripts = ['menu','pagesJS/disciplina'];
     include_once "footer.php";
 
 ?>
