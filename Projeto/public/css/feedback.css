@@ -4,9 +4,8 @@
 
 .principal{
     background-color: white;
-    width: 95vw;
-    height: 87vh;
-    margin: auto;
+    width: 100vw;
+    min-height: 87vh;
     padding: 50px;
 }
 

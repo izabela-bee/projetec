@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     document.querySelectorAll('.disciplina-secao').forEach(secao => {
+      const divs = secao.querySelector('.disciplina-header');
       const btn = secao.querySelector('.toggle-btn');
       const cards = secao.querySelector('.cards-container');
   
-      if (btn && cards) {
+      if (btn && cards || divs) {
         btn.addEventListener('click', () => {
             const isClosed = cards.dataset.closed === 'true';
 
@@ -24,6 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
             cards.dataset.closed = (!isClosed).toString();
             btn.classList.toggle('rotate');
         });
+
+        divs.addEventListener('click', () => {
+          const isClosed = cards.dataset.closed === 'true';
+
+          cards.style.maxHeight = isClosed ? '2000px' : '0';
+          cards.style.opacity = isClosed ? '1' : '0';
+          cards.style.marginTop = isClosed ? '20px' : '0';
+  
+          cards.dataset.closed = (!isClosed).toString();
+          btn.classList.toggle('rotate');
+      });
+
       }
     });
 });
@@ -39,3 +52,6 @@ monitorias.forEach((monitoria, i) => {
   })
 })
 
+function fecharModal() {
+  resultado.innerHTML = '';
+}

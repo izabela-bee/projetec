@@ -44,6 +44,10 @@
     width: 13rem;
 }
 
+.formulario-superior-label-img:hover{
+    cursor: pointer;
+}
+
 .formulario-superior-infosUser{
     display: flex;
     flex-direction: column;
@@ -126,7 +130,6 @@
 
 .formulario-inferior-container-submit:hover{
     cursor: pointer;
-    background-color: #34a10691;
-    transform: scale(1.1);
+    background-color: var(--cor-fundo);
     transition: 0.3s;
 }

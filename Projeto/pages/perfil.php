@@ -12,7 +12,7 @@ include_once "header.php";
                     <h1 class="formulario-superior-titulo">Meu perfil</h1>
                     <label class="formulario-superior-label">
                         <input class="formulario-superior-label-input" type="file" name="fotoPerfil">
-                        <img class="formulario-superior-label-img" src="public/img/fotosPerfil/avatar.png" alt="">
+                        <img class="formulario-superior-label-img" src="../public/img/fotosPerfil/avatar.png" alt="">
                     </label>
                 </div>
                 <div class="formulario-superior-infosUser">
@@ -30,7 +30,7 @@ include_once "header.php";
                         <label class="formulario-inferior-container-labels-label">
                             <p class="formulario-inferior-container-labels-label-titulo">Senha: </p>
                             <input class="formulario-inferior-container-labels-label-input" type="password">
-                            <img class="formulario-inferior-container-labels-label-eye" src="/img/formsComponents/eye.png" alt="">
+                            <img class="formulario-inferior-container-labels-label-eye" src="../public/img/formsComponents/eye.png" alt="">
                         </label>    
                         <label class="formulario-inferior-container-labels-label">
                             <p class="formulario-inferior-container-labels-label-titulo">Curso: </p>

@@ -24,5 +24,9 @@ body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-texto);
     overflow-x: hidden;
-    height: 100vh;
+    min-height: 86.5vh;
+}
+
+main {
+    margin-top: 13vh;
 }

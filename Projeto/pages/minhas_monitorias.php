@@ -494,7 +494,7 @@ include_once 'header.php';
         <!-- Repita mais cards conforme necessário -->
     </div>
 </main>
-<a href="editar_monitoria" class="botao-adicionar" id="botaoAdicionar">
+<a href="editar_monitoria.php" class="botao-adicionar" id="botaoAdicionar">
     +
 </a>
 

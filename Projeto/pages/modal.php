@@ -12,12 +12,11 @@
     </div>
     <div class='cor-botao'>
         <label>
-            <input class='input-check' type="checkbox" name="check">
-            <span class='custom-checkbox'></span>
+            <input class='custom-checkbox' type="checkbox" name="check">
             <p>Eu vou</p>
         </label>
     </div>
-    <div class='cor-sair'>
-        <p class='sair'>X</p>
+    <div class='cor-sair' onclick="fecharModal()">
+        <p class='sair'>x</p>
     </div>
 </div>

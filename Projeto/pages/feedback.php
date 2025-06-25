@@ -11,7 +11,7 @@
         <form action="#">
             <div class="principal-emojis">
                 <label  class="principal-emojis-label" id="1" for="nota1"><img src="../public/img/emojisAvaliacao/1.png" class="principal-emojis-emoji" alt="Carinha triste"></label>
-                <input class="principal-emojis-input" id="1" type="checkbox" name="nota1" id="nota1" checked>
+                <input class="principal-emojis-input" id="1" type="checkbox" name="nota1" id="nota1">
                 <label class="principal-emojis-label" id="2" for="nota2"><img src="../public/img/emojisAvaliacao/2.png" class="principal-emojis-emoji" alt="Carinha fechada"></label>
                 <input class="principal-emojis-input" id="2" type="checkbox" name="nota2" id="nota2">
                 <label class="principal-emojis-label" id="3" for="nota3"><img src="../public/img/emojisAvaliacao/3.png" class="principal-emojis-emoji" alt="Carinha alegre"></label>

@@ -1,5 +1,4 @@
-/* Card */
-@import 'global.css';
+
 
 .main-content{
   background-color:var(--cor-main);
@@ -24,7 +23,6 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-    position: relative;
   }
   
   .edit-icon {
