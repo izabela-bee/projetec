@@ -1,12 +1,10 @@
-/* MAIN */
-@import 'global.css';
 
 
-.principal{
+
+.principal {
     background-color: white;
-    width: 95vw;
-    height: 87vh;
-    margin: auto;
+    width: 100vw;
+    min-height: 87vh;
     padding: 50px;
 }
 
@@ -15,6 +13,7 @@
     font-size: 2rem;
     font-weight: 500;
     margin-top: 3rem;
+    margin-right: 5rem;
 }
 
 .principal-emojis{
@@ -28,17 +27,14 @@
 
 .principal-emojis-emoji{
     width: 50px;
-    background-color: "yellow";
-    transition: 1.7s;
+}
+
+.principal-emojis-emoji:hover{
+    cursor: pointer;
 }
 
 .principal-emojis-input{
     display: none;
-}
-
-.colorir-emoji{
-    background: yellow;
-    border-radius: 52%;
 }
 
 .principal-descricao{
