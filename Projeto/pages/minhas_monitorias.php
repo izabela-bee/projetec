@@ -500,7 +500,7 @@ include_once 'header.php';
 
 <?php
 
-$scripts = ['menu'];
+$scripts = [];
 include_once 'footer.php';
 
 ?>
