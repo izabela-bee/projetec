@@ -319,9 +319,10 @@ include_once "header.php";
             </section>
         </div>
     </main>
+    <div id="resultado"></div>
 
 <?php
-    $scripts = ['menu','pagesJS/disciplina'];
+    $scripts = ['pagesJS/disciplina'];
     include_once "footer.php";
 
 ?>

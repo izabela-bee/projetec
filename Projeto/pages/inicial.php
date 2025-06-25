@@ -35,7 +35,7 @@
 
 <?php
     
-    $scripts = ['menu'];
+    $scripts = [];
     include_once "footer.php";
 
 ?>

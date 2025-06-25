@@ -48,6 +48,6 @@ include_once "header.php";
     </main>
 
 <?php
-    $scripts = ['menu'];
+    $scripts = [];
     include_once "footer.php";
 ?>
