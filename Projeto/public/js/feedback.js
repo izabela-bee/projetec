@@ -1,35 +1,37 @@
-const listaEmojis = document.querySelectorAll('.principal-emojis-label');
+const listaEmojis = document.querySelectorAll('.principal-emojis-emoji');
 const listaInputs = document.querySelectorAll('.principal-emojis-input');
 
-// Aplica classe aos emojis já selecionados
-listaInputs.forEach((input, i) => {
-  if (input.checked) {
-    listaEmojis[i].classList.add('colorir-emoji');
-  }
-});
+listaEmojis.forEach((emoji, i) => {
 
-// Adiciona evento de clique a cada emoji
-listaEmojis.forEach((emoji, index) => {
-  emoji.addEventListener('click', () => {
-    const isAtivo = emoji.classList.contains('colorir-emoji');
+    emoji.addEventListener('click', () => {
+        if (i === 0){
+            listaEmojis[i].src = '../public/img/emojisAvaliacao/pessimo.png';
+            listaEmojis[1].src = '../public/img/emojisAvaliacao/2.png';
+            listaEmojis[2].src = '../public/img/emojisAvaliacao/3.png';
+            listaEmojis[3].src = '../public/img/emojisAvaliacao/4.png';
+        }
+        if (i === 1){
+            listaEmojis[i].src = '../public/img/emojisAvaliacao/mediano.png';
+            listaEmojis[0].src = '../public/img/emojisAvaliacao/1.png';
+            listaEmojis[2].src = '../public/img/emojisAvaliacao/3.png';
+            listaEmojis[3].src = '../public/img/emojisAvaliacao/4.png';
+        }
+        if (i === 2){
+            listaEmojis[i].src = '../public/img/emojisAvaliacao/bom.png';
+            listaEmojis[0].src = '../public/img/emojisAvaliacao/1.png';
+            listaEmojis[1].src = '../public/img/emojisAvaliacao/2.png';
+            listaEmojis[3].src = '../public/img/emojisAvaliacao/4.png';
+        }
+        if (i === 3){
+            listaEmojis[i].src = '../public/img/emojisAvaliacao/otimo.png';
+            listaEmojis[0].src = '../public/img/emojisAvaliacao/1.png';
+            listaEmojis[1].src = '../public/img/emojisAvaliacao/2.png';
+            listaEmojis[2].src = '../public/img/emojisAvaliacao/3.png';
+        }
 
-    if (isAtivo) {
-      // Remove cor dos emojis a partir do clicado
-      for (let i = index; i < listaEmojis.length; i++) {
-        listaEmojis[i].classList.remove('colorir-emoji');
-      }
-    } else {
-      // Limpa todos e aplica até o clicado
-      listaEmojis.forEach(e => e.classList.remove('colorir-emoji'));
+    });
 
-      for (let i = 0; i <= index; i++) {
-        listaEmojis[i].classList.add('colorir-emoji');
-        listaInputs[i].checked = true;
-      }
+    
+    
+})
 
-      for (let i = index + 1; i < listaInputs.length; i++) {
-        listaInputs[i].checked = false;
-      }
-    }
-  });
-});
