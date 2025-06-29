@@ -172,6 +172,17 @@ a {
   border-radius: 50%;
   padding: 10px;
   font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.edit-icon:hover{
+    background-color: #c3c1c1;
+}
+.edit-image {
+    width: 20px;
+    height: 20px;
 }
 
 .options-icon {
@@ -189,6 +200,66 @@ a {
     gap: 30px;
     padding: 15px;
     justify-content: center;
+}
+.options-popup {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 120px;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.options-popup.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.options-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options-popup li {
+    padding: 0;
+    margin: 0;
+}
+
+.options-popup .popup-option {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.options-popup .popup-option:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+.card-content {
+    padding: 15px 20px;
+}
+.info-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+.info-line p {
+    margin: 0;
 }
 /* Estilos para o Botão de Adicionar */
 .botao-adicionar {
