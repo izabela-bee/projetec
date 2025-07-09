@@ -1,20 +1,18 @@
 @import 'global.css';
 
-.main-content{
+body{
     background-color:var(--cor-main);
-    height: 87vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-*{
-    color: white;
+form {
+    color: #FFF;
 }
 
 .card-grid{
-    
-    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 87vh;
+    align-items: center;
 }
 
 /* Contêiner principal do formulário */
@@ -37,7 +35,24 @@
     align-items: center;
     padding: 15px 20px;
     border-bottom: 3px solid var(--cor-borda);
-    color: black; 
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cabecalho-formulario-disciplina {
+    border-bottom: 2px solid var(--cor-borda); 
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+/* Corpo do formulário (onde estão os inputs) */
+.cabecalho-formulario {
+    background-color: var(--cor-azul-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 3px solid var(--cor-borda);
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -70,7 +85,7 @@
 }
 
 .linha-formulario input[type="text"],
-.linha-formulario textarea, .linha-formulario input[type="date"] {
+.linha-formulario textarea {
     flex-grow: 1; 
     padding: 8px 12px;
     border: 2px solid var(--cor-borda);
@@ -93,6 +108,9 @@
     flex-basis: 100%; 
 }
 
+#inputData, #inputSala, #inputHorario, #inputMaterias, #areaTextoMateriais {
+    color: black;
+}
 
 .rodape-formulario {
     display: flex;
@@ -120,10 +138,6 @@
 
 .botao-enviar:hover {
     background-color: #0099d0; 
-}
-
-input, textarea {
-    color: black;
 }
 
 
