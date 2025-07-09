@@ -1,12 +1,8 @@
-
-
-.main-content{
+body{
   background-color:var(--cor-main);
-  
 }
 
 .card {
-    
     width: 322px;
     height: 210px;
     border: 3px solid black;
@@ -16,72 +12,137 @@
     background-color: white;
   }
   
-  .card-top {
-    background-color: #00b6f1;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  
-  .edit-icon {
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .options-icon {
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .card-content {
-    padding: 12px 12px;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+.card-top {
+  background-color: #00b6f1;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+}
 
-  .card-content p{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
+.edit-icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-  .card-grid{
-      display: flex;
-      flex-wrap: wrap; 
-      gap: 30px;
-      padding: 50px 15px;
-      justify-content: center;
-  }
-  /* Estilos para o Botão de Adicionar */
-  .botao-adicionar {
-      position: fixed; 
-      bottom: 30px;   
-      right: 30px;    
-      width: 60px;     
-      height: 60px;    
-      background-color: var(--cor-menu); 
-      color: white;   
-      font-size: 40px; 
-      border: 3px solid var(--cor-margem); 
-      border-radius: 50%; 
-      display: flex;   
-      justify-content: center;
-      align-items: center;
-      cursor: pointer; 
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-      z-index: 999; 
-      transition: background-color 0.3s ease, transform 0.2s ease; 
-  }
-  
-  .botao-adicionar:hover {
-      background-color: var(--cor-hover); /
-  }
-  
+.edit-icon:hover{
+  background-color: #c3c1c1;
+}
+
+.edit-image {
+    width: 20px;
+    height: 20px;
+}
+
+.options-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 15px;
+  justify-content: center;
+}
+
+.options-popup {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  min-width: 120px;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.options-popup.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.options-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-popup li {
+  padding: 0;
+  margin: 0;
+}
+
+.options-popup .popup-option {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.options-popup .popup-option:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.card-content {
+  padding: 15px 20px;
+}
+
+.info-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.info-line p {
+  margin: 0;
+}
+
+/* Estilos para o Botão de Adicionar */
+.botao-adicionar {
+  position: fixed; 
+  bottom: 30px;   
+  right: 30px;    
+  width: 60px;     
+  height: 60px;    
+  background-color: var(--cor-menu); 
+  color: white;   
+  font-size: 40px; 
+  border: 3px solid var(--cor-margem); 
+  border-radius: 50%; 
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  z-index: 999; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.botao-adicionar:hover {
+  background-color: var(--cor-hover); /
+}
