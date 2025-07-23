@@ -322,7 +322,7 @@ include_once "header.php";
     <div id="resultado"></div>
 
 <?php
-    $scripts = ['pagesJS/disciplina'];
+    $scripts = ['disciplinasJS/disciplina'];
     include_once "footer.php";
 
 ?>

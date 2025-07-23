@@ -40,13 +40,8 @@ include_once 'header.php';
     </form>
 
 </main>
-<script>
-    document.getElementById('botaoConfirmarEdicao').addEventListener('click', () => {
-        window.location.href = 'minhas_monitorias.php';
-    });
-</script>
 
 <?php
-$scripts = [];
+$scripts = ["editar_monitoriaJS/editar_monitoria"];
 include_once 'footer.php';
 ?>

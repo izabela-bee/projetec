@@ -28,11 +28,11 @@
         <form class="principal-formulario" data-form>
             <div class="principal-formulario-container">
                 <label for="registro" class="principal-formulario-label">Registro Acadêmico:</label>
-                <input id="registro" class="principal-formulario-input" name="registro" type="text" required placeholder="Ex: 2023101">
+                <input id="registro" class="principal-formulario-input" name="registro" type="text" required placeholder="Ex: 0084182">
             </div>
             <div class="principal-formulario-container">
                 <label for="email" class="principal-formulario-label">Email:</label>
-                <input id="email" class="principal-formulario-input" name="email" type="email" required placeholder="Ex: example@email.com">
+                <input id="email" class="principal-formulario-input" name="email" type="email" required placeholder="Ex: example@gmail.com">
             </div>
             <div class="principal-formulario-container">
                 <label for="senha" class="principal-formulario-label">Senha:</label>
@@ -44,12 +44,11 @@
                 <span id="erro-senha" class="erro-mensagem"></span>
             </div>
             <input class="principal-formulario-submit" id="entrar" name="entrar" value="Entrar" type="submit">
-
         </form>
     </section>
 </main>
 
 <?php
-    
+    $scripts = ['registrarJS/registrar'];
     include_once "footer.php";
 ?>

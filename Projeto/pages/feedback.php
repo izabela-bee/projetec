@@ -27,7 +27,7 @@
 
 <?php
 
-$scripts = ["feedback"];
+$scripts = ["feedbackJS/feedback"];
     
 include_once "footer.php";
 
