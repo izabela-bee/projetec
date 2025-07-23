@@ -14,7 +14,7 @@ window.onload = function () {
 
         if (registro !== "" && email !== "" && senha !== "" && senhaConfirm !== "") {
             if (senha === senhaConfirm) {
-                window.location.href = "pagina-inicial.html";
+                window.location.href = "inicial.php";
             } else {
                 erroSenha.textContent = "As senhas devem ser idênticas";
             }
