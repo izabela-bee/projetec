@@ -11,7 +11,7 @@ include_once 'header.php';
         <div class="card">
                 <div class="card-top">
                     <button class="edit-icon" id="iconeEdicao">
-                        <img src="assets/editar.png" alt="Ícone de Edição" class="edit-image">
+                        <img src="../public/img/formsComponents/icone-edicao.jpeg" alt="Ícone de Edição" class="edit-image">
                     </button>
                     <div class="options-icon" id="optionsIcon">⋮</div>
 
@@ -54,7 +54,7 @@ include_once 'header.php';
 
 <?php
 
-$scripts = ["minhas_monitoriasJS/minhas_monitorias"];
+$scripts = ["minhas_monitoriaJS/minhas_monitorias"];
 include_once 'footer.php';
 
 ?>

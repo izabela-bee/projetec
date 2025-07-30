@@ -7,6 +7,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="../public/css/registrar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&display=swap"
@@ -41,12 +42,14 @@
             <div class="principal-formulario-container">
                 <label for="senha-confirm" class="principal-formulario-label">Confirmar senha:</label>
                 <input id="senha-confirm" class="principal-formulario-input" name="senha-confirm" type="password" required>
-                <span id="erro-senha" class="erro-mensagem"></span>
+                <!-- <span id="erro-senha" class="erro-mensagem"></span> -->
             </div>
             <input class="principal-formulario-submit" id="entrar" name="entrar" value="Entrar" type="submit">
         </form>
     </section>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 <?php
     $scripts = ['registrarJS/registrar'];
