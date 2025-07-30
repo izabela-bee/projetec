@@ -1,5 +1,5 @@
 <?php
-if (basename($_SERVER['PHP_SELF']) !== 'registrar.php') {
+if (basename($_SERVER['PHP_SELF']) !== 'login.php') {
     echo '<script src="../public/js/menu.js"></script>';
 }
 

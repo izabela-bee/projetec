@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../public/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Konkhmer+Sleokchher&display=swap"
@@ -38,7 +39,9 @@
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 <?php
-    
+    $scripts = ['loginJs/login'];
     include_once "footer.php";
 ?>
