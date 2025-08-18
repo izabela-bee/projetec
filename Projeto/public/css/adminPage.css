@@ -1,0 +1,156 @@
+.main-admin{
+    width: 100%;
+    height: 87vh;
+    background: #FFF;
+    position: relative;
+}
+
+.admin-procurar_alunos{
+    position: absolute;
+    width: 50rem;
+    top: 3rem;
+    left: 5%;
+    height: 45rem;
+    border: 2px solid black;
+    background: #F3F3F3;
+}
+
+.admin-procurar_alunos-pesquisa{
+    width: 80%;
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F3F3;
+    height: 1.5rem;
+    margin: 1.8rem auto 1rem auto;
+    padding-left: 1.4rem;
+    padding-bottom: 0.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.admin-procurar-container{
+    position: relative;
+}
+
+.icon-search{
+    position: absolute;
+    width: 18px;
+    top: -0.1rem;
+    left: 5rem;
+}
+
+.admin-achar_alunos{
+    position: absolute;
+    display: flex;
+    height: 37rem;
+    overflow-y: scroll;
+    top: 3rem;
+    gap: 4rem;
+    right: 0;
+}
+
+.admin-achar_alunos-selecionados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.admin-achar_alunos-selecionados-tabela{
+    width: 35rem;
+    border-collapse: separate;
+    border-spacing: 0 5rem;
+    margin-top: -5rem;
+}
+
+.admin-achar_alunos-selecionados-tabela tr{
+    background-color: #F3F3F3;
+}
+
+
+.admin-achar_alunos-materias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 5rem;
+}
+
+.materias_monitoria{
+    background: #F3F3F3;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 5rem;
+}
+
+.admin-achar_alunos-materias-title{
+    margin-right: 5rem;
+}
+
+.linha-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.linha-check{
+    position: relative;
+}
+
+.check-aluno{
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+    width: 23px;
+}
+
+.foto-table{
+    width: 25px;
+    height: 25px;
+}
+
+.tabela-alunos-geral{
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    overflow-y: scroll;
+    height: 40rem;
+    flex-direction: column;
+}
+
+.botao_confirmar_inscricao_monitores{
+    background-color: #3B9F11;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 6rem;
+    font-size: 1.1rem;
+    right: 27rem;
+    padding: 1.5rem 4rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+h2{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+tr{
+    width: 28rem;
+}
+
+th {
+    height: 3rem;
+    width: 18rem;
+    border: 1px solid black;
+}
