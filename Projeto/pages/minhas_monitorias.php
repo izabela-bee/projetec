@@ -6,6 +6,15 @@ include_once 'header.php';
 ?>
 
 <main class="main-content">
+    <div class="abas">
+        <div class="aba-espera">
+            Em Espera
+        </div>
+        <div class="aba-concluido">
+            Concluída
+        </div>
+        
+    </div>
     <div class="card-grid">
         <!-- Cards repetidos -->
         <div class="card">
@@ -20,16 +29,6 @@ include_once 'header.php';
                             <li><a href="#" class="popup-option" data-action="editar">Editar</a></li>
                             <li><a href="#" class="popup-option" data-action="duplicar">Duplicar</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="info-line">
-                        <p><b>Ricardo Dias</b></p>
-                        <p><b>Sala:</b> 302</p>
-                    </div>
-                    <div class="info-line">
-                        <p><b>Matemática 2</b></p>
-                        <p><b>Data:</b> 17/04</p>
                     </div>
                 </div>
                 <div class="card-content">
