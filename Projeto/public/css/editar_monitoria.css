@@ -17,13 +17,12 @@ form {
 
 /* Contêiner principal do formulário */
 .container-formulario {
-    background-color: #525252;
-    width: 600px; 
+    position: relative;
+    width: 1033px; 
+    height: 602;
     max-width: 90%; 
     margin: auto; 
-    border: 3px solid var(--cor-borda);
-    border-radius: 8px;
-    box-shadow: 2px 2px 0px black;
+    border: 1px solid black;
     overflow: hidden; 
 }
 
@@ -35,33 +34,23 @@ form {
     align-items: center;
     padding: 15px 20px;
     border-bottom: 3px solid var(--cor-borda);
-    font-weight: bold;
     font-size: 1.1em;
 }
 
 .cabecalho-formulario-disciplina {
+    position: absolute;
+    left: 42%;
     border-bottom: 2px solid var(--cor-borda); 
-    padding-bottom: 2px;
+    padding-bottom: 2px ;
     text-align: center;
 }
-
-/* Corpo do formulário (onde estão os inputs) */
-.cabecalho-formulario {
-    background-color: var(--cor-azul-claro);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    border-bottom: 3px solid var(--cor-borda);
-    font-weight: bold;
-    font-size: 1.1em;
+.cabecalho-destaque{
+    background-color: var(--cor-fundo-cinza);
+    color: black;
+    padding: 4px 30px;
+    border-radius: 5px;
 }
 
-.cabecalho-formulario-disciplina {
-    border-bottom: 2px solid var(--cor-borda); 
-    padding-bottom: 2px;
-    text-align: center;
-}
 
 /* Corpo do formulário (onde estão os inputs) */
 .corpo-formulario {
@@ -69,6 +58,7 @@ form {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
+    background-color: #fff;
 }
 
 .linha-formulario {
@@ -76,6 +66,7 @@ form {
     align-items: center; 
     flex: 1 1 calc(50% - 10px); 
     box-sizing: border-box; 
+    color: black;
 }
 
 .linha-formulario label {
@@ -89,9 +80,12 @@ form {
     flex-grow: 1; 
     padding: 8px 12px;
     border: 2px solid var(--cor-borda);
-    border-radius: 4px;
     font-size: 1em;
-    background-color: #f0f0f0; 
+    background-color:var(--cor-fundo-cinza); 
+    text-align: center;
+    border-bottom: black solid 1px;
+    color: var(--cor-texto-cinza);
+    
 }
 
 .linha-formulario input[type="text"]::placeholder,
@@ -102,6 +96,7 @@ form {
 .linha-formulario textarea {
     min-height: 120px; 
     resize: vertical;
+    
 }
 
 .linha-formulario.largura-total {
@@ -117,11 +112,11 @@ form {
     justify-content: flex-end; 
     padding: 15px 20px;
     border-top: 3px solid var(--cor-borda);
-    background-color: #f0f0f0; 
+    
 }
 
 .botao-enviar {
-    background-color: var(--cor-azul-claro); 
+    background-color: black; 
     color: white;
     font-size: 24px; 
     width: 50px;
