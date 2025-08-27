@@ -35,9 +35,25 @@ include_once 'header.php';
         </div>
     </form>
 
+    <div class="modal-overlay" id="confirmModal">
+        <div class="modal-box">
+            <h3>Deseja realmente aplicar as mudanças feitas na monitoria?</h3>
+            <button class="btn-confirmar" id="btnSim">Confirmar</button>
+            <button class="btn-cancelar" id="btnNao">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay-sair" id="confirmModal-sair">
+        <div class="modal-box-sair">
+            <h3>Deseja realmente cancelar as informações editadas da monitoria?</h3>
+            <button class="btn-confirmar-sair" id="btnSim-sair">Confirmar</button>
+            <button class="btn-cancelar-sair" id="btnNao-sair">Cancelar</button>
+        </div>
+    </div>
+
 </main>
 
 <?php
-$scripts = ["editar_monitoriaJS/editar_monitoria"];
+$scripts = ["editar_monitoriaJS/editar_monitoria_confirmar_modal", "editar_monitoriaJS/editar_monitoria_cancelar_modal"];
 include_once 'footer.php';
 ?>

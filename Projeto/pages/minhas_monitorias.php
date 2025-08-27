@@ -27,7 +27,7 @@ include_once 'header.php';
                     <div class="options-popup" id="optionsPopup">
                         <ul>
                             <li><a href="#" class="popup-option" data-action="editar">Editar</a></li>
-                            <li><a href="#" class="popup-option" data-action="duplicar">Duplicar</a></li>
+                            <li><a href="#" class="popup-option" data-action="excluir" id="linkSair">Excluir</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,14 +46,23 @@ include_once 'header.php';
         <!-- Repita mais cards conforme necessário -->
     </div>
 </main>
-<button class="botao-adicionar" id="botaoAdicionar" id="editar">
+</main>
+    <button class="botao-adicionar" id="botaoAdicionar" id="editar">
         +
-</button>
+    </button>
+    <div class="modal-overlay-sair" id="confirmModal-sair">
+        <div class="modal-box-sair">
+            <h3>Deseja realmente excluir as informações da monitoria selecionada?</h3>
+            <button class="btn-confirmar-sair" id="btnSim-sair">Confirmar</button>
+            <button class="btn-cancelar-sair" id="btnNao-sair">Cancelar</button>
+        </div>
+    </div>
 
 
 <?php
 
-$scripts = ["minhas_monitoriaJS/minhas_monitorias"];
+
+$scripts = ["minhas_monitoriaJS/minhas_monitorias", "minhas_monitoriaJS/minhas_monitorias_excluir"];
 include_once 'footer.php';
 
 ?>
