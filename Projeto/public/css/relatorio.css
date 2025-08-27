@@ -13,6 +13,7 @@ form {
     justify-content: center;
     height: 87vh;
     align-items: center;
+    justify-content: space-around;
     gap: 40px;
 }
 
@@ -22,7 +23,6 @@ form {
     width: 760px; 
     height: 700px;
     max-width: 90%; 
-    margin: auto; 
     border: 1px solid black;
     overflow: hidden;
 }
@@ -58,7 +58,7 @@ form {
     padding: 30px;
     display: flex;
     flex-wrap: wrap; 
-    gap: 20px; 
+    gap: 30px; 
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -124,8 +124,8 @@ form {
 .container-lateral {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 400px;
+    gap: 30px;
+    align-items: center;
 }
 
 .container-lateral-titulo {
@@ -135,22 +135,27 @@ form {
 .tabela-alunos {
     width: 100%;
     border-collapse: collapse;
+    width: 500px;
 }
 
 .tabela-alunos td {
-    border: 1px solid #ccc;
-    padding: 5px;
-    font-size: 14px;
+    border-bottom: 1px solid black;
+    padding: 12px 7px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .box-lateral {
     background-color: var(--cor-fundo-cinza);
-    min-height: 150px;
+    min-height: 200px;
     border: 1px solid black;
+    overflow-y: auto;
+    height: 230px;
 }
 
 #areaTextoFeedback {
     height: 280px;
+    width: 500px;
 }
 
 .btn-salvar {
