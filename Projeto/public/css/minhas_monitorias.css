@@ -7,9 +7,34 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
+}
+.buttons{
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
-.aba-espera{
+.buttons:hover{
+  background-color: #cccccc;
+}
+
+.form-espera{
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 150px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.form-espera:hover{
+  background-color: #cccccc;
+}
+
+.form-concluido{
   background-color: #FFFFFF;
   height: 100%;
   width: 150px;
@@ -19,31 +44,32 @@ body{
   align-items: center;
 }
 
-.aba-espera:hover{
+.form-concluido:hover{
   background-color: #cccccc;
 }
 
-.aba-espera.selecionado{
-  background-color: #cccccc;
+.img-concluido{
+  width: 70px;
+  height: 70px;
+  
 }
 
-.aba-concluido{
-  background-color: #FFFFFF;
-  height: 100%;
-  width: 150px;
-  border: 2px solid #000;
+.card-top-concluido{
+  background-color: #00b6f1;
+  height: 60%;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 15px;
   justify-content: center;
-  align-items: center;
-}
-
-.aba-concluido:hover{
-  background-color: #cccccc;
-}
-
-.aba-concluido.selected{
-  background-color: #cccccc;
-}
+}  
 
 .card {
     width: 322px;
@@ -54,18 +80,6 @@ body{
     overflow: hidden;
     background-color: white;
   }
-
-.card-concluido{
-  
-}
-
-.card-grid{
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 30px;
-  padding: 15px;
-  justify-content: center;
-}  
 
 .card-top {
   background-color: #00b6f1;
@@ -100,6 +114,12 @@ body{
 .options-icon {
   font-size: 18px;
   cursor: pointer;
+}
+.options-icon-concluido{
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .card-content {
