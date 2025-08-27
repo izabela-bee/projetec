@@ -40,11 +40,37 @@ include_once 'header.php';
                     <td>0078346</td>
                     <td>Gabriel Luís B. S.</td>
                     <td>INFO-3</td>
+                    <td><input type="checkbox"></td>
                 </tr>
                 <tr>
                     <td>0023451</td>
                     <td>Juliana Fernandes</td>
                     <td>ADM-3</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>0023451</td>
+                    <td>Juliana Fernandes</td>
+                    <td>ELET-3</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>0078346</td>
+                    <td>Gabriel Luís B. S.</td>
+                    <td>INFO-3</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>0023451</td>
+                    <td>Juliana Fernandes</td>
+                    <td>ADM-3</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>0023451</td>
+                    <td>Juliana Fernandes</td>
+                    <td>ELET-3</td>
+                    <td><input type="checkbox"></td>
                 </tr>
             </table>
         </div>
