@@ -13,21 +13,26 @@ include_once 'header.php';
             <div class="cabecalho-formulario-info cabecalho-destaque">INFO 2</div>
         </div>
         <div class="corpo-formulario">
-            <div class="linha-formulario">
-                <label for="inputData">Data:</label>
-                <input type="text" id="inputData" placeholder="dd/mm/aaaa">
+            <div class = "corpo1">
+                <div class="linha-formulario">
+                    <label for="inputData">Data:</label>
+                    <input type="text" id="inputData" placeholder="dd/mm/aaaa">
+                </div>
+                <div class="linha-formulario">
+                    <label for="inputSala">Sala:</label>
+                    <input type="text" id="inputSala" placeholder="302">
+                </div>
+                <div class="linha-formulario">
+                    <label for="inputHorario">Horário:</label>
+                    <input type="text" id="inputHorario" placeholder="00:00">
+                </div>
             </div>
-            <div class="linha-formulario">
-                <label for="inputSala">Sala:</label>
-                <input type="text" id="inputSala" placeholder="302">
-            </div>
-            <div class="linha-formulario">
-                <label for="inputHorario">Horário:</label>
-                <input type="text" id="inputHorario" placeholder="00:00">
-            </div>
-            <div class="linha-formulario largura-total">
-                <textarea id="areaTextoMateriais"
-                    placeholder="Adicionar materiais: arquivo.pdf, link.slide, apostila"></textarea>
+            <div class = "corpo2">
+                <div class="linha-formulario largura-total">
+                    <label for="inputData" class ="texto_materia">Matéria:</label>
+                    <textarea id="areaTextoMateriais"
+                        placeholder="Adicionar materiais: arquivo.pdf, link.slide, apostila"></textarea>
+                </div>
             </div>
         </div>
         <div class="rodape-formulario">
