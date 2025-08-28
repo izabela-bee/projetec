@@ -11,7 +11,7 @@ linkSair.addEventListener("click", function(e) {
 });
 
 btnSim.addEventListener("click", function() {
-    window.location.href = "minhas_monitorias.php";
+    window.location.href = "minhas_monitorias_inscritas.php";
   });
 btnNao.addEventListener("click", function() {
     modalSair.style.display = "none";
