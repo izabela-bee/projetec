@@ -1,0 +1,181 @@
+@import 'global.css';
+
+body{
+    background-color:var(--cor-main);
+}
+
+form {
+    color: #FFF;
+}
+
+.card-grid{
+    display: flex;
+    justify-content: center;
+    height: 87vh;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Contêiner principal do formulário */
+.container-formulario {
+    position: relative;
+    width: 760px; 
+    height: 700px;
+    max-width: 90%; 
+    margin: auto; 
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+/* Cabeçalho do formulário */
+.cabecalho-formulario {
+    background-color: var(--cor-azul-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 3px solid var(--cor-borda);
+    font-size: 1.1em;
+}
+
+.cabecalho-formulario-disciplina {
+    position: absolute;
+    left: 42%;
+    border-bottom: 2px solid var(--cor-borda); 
+    padding-bottom: 2px ;
+    text-align: center;
+}
+.cabecalho-destaque{
+    background-color: var(--cor-fundo-cinza);
+    color: black;
+    padding: 4px 30px;
+    border-radius: 5px;
+}
+
+
+/* Corpo do formulário (onde estão os inputs) */
+.corpo-formulario {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.linha-formulario {
+    display: flex;
+    align-items: center; 
+    flex: 1 1 calc(50% - 10px); 
+    box-sizing: border-box; 
+    color: black;
+}
+
+.linha-formulario label {
+    margin-right: 10px;
+    font-weight: bold;
+    min-width: 70px; 
+}
+
+.linha-formulario input[type="text"],
+.linha-formulario textarea, #areaTextoFeedback {
+    padding: 8px 12px;
+    border: 2px solid var(--cor-borda);
+    font-size: 1em;
+    background-color:var(--cor-fundo-cinza); 
+    text-align: center;
+    border-bottom: black solid 1px;
+    color: var(--cor-texto-cinza);
+    
+}
+
+.linha-formulario input[type="text"]::placeholder,
+.linha-formulario textarea::placeholder {
+    color: var(--cor-texto-cinza);
+}
+
+.linha-formulario textarea {
+    min-height: 120px; 
+    resize: vertical;
+    
+}
+
+.linha-formulario.largura-total {
+    align-items: first baseline;
+}
+
+#inputData, #inputSala, #inputHorario, #areaTextoMateriais {
+    color: black;
+}
+
+#inputData, #inputSala, #inputHorario {
+    height: 50px;
+    width: 250px;
+}
+
+#areaTextoMateriais {
+    height: 280px;
+    width: 560px;
+}
+
+
+.container-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.container-lateral-titulo {
+    text-align: center;
+}
+
+.tabela-alunos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-alunos td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.box-lateral {
+    background-color: var(--cor-fundo-cinza);
+    min-height: 150px;
+    border: 1px solid black;
+}
+
+#areaTextoFeedback {
+    height: 280px;
+}
+
+.btn-salvar {
+    background-color: #28a745;
+    color: white;
+    height: 70px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-salvar:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .container-formulario {
+        width: 95%; 
+    }
+    .linha-formulario {
+        flex: 1 1 100%; 
+    }
+}
+

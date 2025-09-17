@@ -1,0 +1,68 @@
+/* MAIN */
+
+.principal{
+    background-color: white;
+    width: 100vw;
+    min-height: 87vh;
+    margin-top: 13vh;
+    padding: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.primeiro {
+    margin-top: 10rem;
+}
+
+.principal-card{
+    background-color: #EAEAEA;
+    width: 50rem;
+    border-radius: 1rem;
+    outline: 4px solid black;
+}
+
+.principal-card-titulo{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #009987a6;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal-card-titulo-nome{
+    flex-grow: 1;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.principal-card-titulo-imagem{
+    background-image: url('../img/fotosPerfil/bernardo-bento.jpeg');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.principal-card-info {
+    position: relative;
+    display: flex;
+    padding: 2rem 2rem 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.principal-card-info-sala{
+    position: absolute;
+    right: 6rem;
+}
+
+.principal-card-info2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 2rem 2rem;
+}

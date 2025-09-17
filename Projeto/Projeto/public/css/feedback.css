@@ -1,0 +1,75 @@
+/* MAIN */
+@import 'global.css';
+
+
+.principal{
+    background-color: white;
+    width: 100vw;
+    min-height: 87vh;
+    padding: 50px;
+}
+
+.principal-titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.principal-emojis{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 430px;
+    margin-top: 40px;
+}
+
+.principal-emojis-emoji{
+    width: 50px;
+    background-color: "yellow";
+    transition: 1.7s;
+}
+
+.principal-emojis-input{
+    display: none;
+}
+
+.colorir-emoji{
+    background: yellow;
+    border-radius: 52%;
+}
+
+.principal-descricao{
+    margin-top: 70px;
+    font-size: 1rem;
+    margin-left: 430px;
+    width: 900px;
+    height: 280px;
+    outline: none;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    padding: 5px;
+}
+.principal-descricao:focus{
+    outline: black;
+    border: 1px solid black;
+}
+
+.principal-submit{
+    padding: 14px 40px;
+    font-size: 1.5rem;
+    background-color: var(--cor-botao);
+    border: none;
+    position: absolute;
+    left: 66.7%;
+    border-radius: 12px;
+    top: 78%;
+}
+
+.principal-submit:hover {
+    cursor:  pointer;
+    opacity: 0.8;
+    transition: 1.2s;
+}

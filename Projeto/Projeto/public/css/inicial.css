@@ -1,0 +1,103 @@
+@import url('global.css');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* MAIN */
+
+.principal{
+    background-color: white;
+    width: 100vw;
+    height: 87vh;
+    padding: 50px;
+}
+
+.principal-secao1{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-secao1-titulo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.principal-secao1-subtitulo{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.principal-secao1-texto{
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    margin: 5px 0 20px 0;
+}
+
+.principal-secao2{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.principal-secao2-card{
+    padding: 50px;
+    width: 440px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.principal-secao2-card:hover{
+    background-color: #d9d9d9;
+    transition: 0.6s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.principal-secao2-card-nome{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.principal-secao2-card-imagem{
+    margin: 20px 0;
+    width: 250px;
+    height: 250px;
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+}
+
+.leticia {
+    background-image: url('../img/fotosPerfil/leticia.jpg');
+}
+
+.gabriela{
+    background-image: url('../img/fotosPerfil/gabriela.jpg');
+}
+
+.bernardo{
+    background-image: url('../img/fotosPerfil/bernardo-bento.jpeg');
+}
+
+.principal-secao2-card-titulo{
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.principal-secao2-card-turma{
+    font-size: 1.3rem;
+}

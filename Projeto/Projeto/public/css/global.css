@@ -1,0 +1,35 @@
+:root{
+    --verde-background: #4AB91B;
+    --verde-claro: #4FEC0C;
+    --cinza-input: #D9D9D9;
+    --cor-termos: #04067B;
+    --cor-fundo: #358B11;
+    --cor-menu: #4AB91B;
+    --cor-botao: #4FEC0C;
+    --cor-hover:#4ab91b78;
+    --cor-margem:#2A6C0B;
+    --cor-hover:#1f6502;
+    --cor-main: #FFFFFF;
+    --cor-azul-claro:#00B5E7;
+    --cor-fundo-cinza:#D9D9D9;
+    --cor-texto-cinza: #6A6A6A;
+    --fonte-titulo: "Konkhmer Sleokchher", system-ui;
+    --fonte-texto: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-texto);
+    overflow-x: hidden;
+    min-height: 86.5vh;
+}
+
+main {
+    margin-top: 13vh;
+}

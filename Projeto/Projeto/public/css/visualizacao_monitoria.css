@@ -1,0 +1,167 @@
+@import 'global.css';
+
+body{
+    background-color:var(--cor-main);
+}
+
+form {
+    color: #FFF;
+}
+
+.card-grid{
+    display: flex;
+    justify-content: center;
+    height: 87vh;
+    align-items: center;
+}
+
+/* Contêiner principal do formulário */
+.container-formulario {
+    position: relative;
+    width: 1033px; 
+    height: 602;
+    max-width: 90%; 
+    margin: auto; 
+    border: 1px solid black;
+    overflow: hidden; 
+}
+
+/* Cabeçalho do formulário */
+.cabecalho-formulario {
+    background-color: var(--cor-azul-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 3px solid var(--cor-borda);
+    font-size: 1.1em;
+}
+
+.cabecalho-formulario-disciplina {
+    position: absolute;
+    left: 42%;
+    border-bottom: 2px solid var(--cor-borda); 
+    padding-bottom: 2px ;
+    text-align: center;
+}
+.cabecalho-destaque{
+    background-color: var(--cor-fundo-cinza);
+    color: black;
+    padding: 4px 30px;
+    border-radius: 5px;
+}
+
+
+/* Corpo do formulário (onde estão os inputs) */
+.corpo-formulario {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+    background-color: #fff;
+}
+
+.linha-formulario {
+    display: flex;
+    align-items: center; 
+    width: 20rem;
+
+    box-sizing: border-box; 
+    color: black;
+    margin: 20px 60px 20px 0px;
+}
+
+.linha-formulario label {
+    margin-right: 10px;
+    font-weight: bold;
+    min-width: 70px; 
+}
+
+.linha-formulario input[type="text"],
+.linha-formulario textarea {
+    flex-grow: 1; 
+    padding: 8px 12px;
+    border: 2px solid var(--cor-borda);
+    font-size: 1em;
+    background-color:var(--cor-fundo-cinza); 
+    text-align: center;
+    border-bottom: black solid 1px;
+    color: var(--cor-texto-cinza);
+    
+}
+
+.linha-formulario input[type="text"]::placeholder,
+.linha-formulario textarea::placeholder {
+    color: var(--cor-texto-cinza);
+}
+
+.linha-formulario textarea {
+    min-height: 120px; 
+    resize: vertical;
+    
+}
+
+
+.linha-formulario.largura-total {
+    align-items: first baseline;
+    width:100%;
+    height: 100%;
+  }
+.corpo1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.corpo2{
+    width: 60%;
+    height: 279px;
+}
+
+#inputData, #inputSala, #inputHorario, #inputMaterias{
+    color: black;
+  }
+  #areaTextoMateriais {
+  color: black;
+  height: 279px;
+
+}
+
+.rodape-formulario {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 15px 20px;
+    border-top: 3px solid var(--cor-borda);
+    
+}
+
+.botao-enviar {
+    background-color: black; 
+    color: white;
+    font-size: 24px; 
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--cor-borda);
+    border-radius: 50%; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 0px var(--cor-borda);
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #0099d0; 
+}
+
+
+@media (max-width: 768px) {
+    .container-formulario {
+        width: 95%; 
+    }
+    .linha-formulario {
+        flex: 1 1 100%; 
+    }
+}
+
