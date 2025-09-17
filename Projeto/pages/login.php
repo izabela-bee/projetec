@@ -25,7 +25,7 @@
             <div class="principal-secao-titulo">
                 <h2 class="principal-secao-titulo-conteudo">Login</h2>
             </div>
-            <form class="principal-formulario" method="POST" action="valida.php" data-form>
+            <form class="principal-formulario" method="POST" action="validacao.php" data-form>
 
                 <label for="registro" class="principal-formulario-label">Registro Acadêmico:</label>
                 <input id="registro" class="principal-formulario-input" name="registro" type="text" required>
@@ -45,7 +45,7 @@
     $scripts = ['loginJs/login'];
     include_once "footer.php";
     session_start();
-    if (isset($_SESSION['username'])) {
+    if (isset($_SESSION['registro'])) {
 	    header('Location: inicial.php');
 	    exit;
  }
