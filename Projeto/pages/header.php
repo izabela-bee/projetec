@@ -35,9 +35,10 @@
                 <div class="menu-quebra">
                     <ul class="cabecalho-navegacao-menu-perfil-elementos aberto">
                         <a href='perfil.php' class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Meu Perfil</li></a>
-                        <a href="registrar.php" class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Log out</li></a>
+                        <a href="logout.php" class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Log out</li></a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
