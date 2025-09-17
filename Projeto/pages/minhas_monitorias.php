@@ -8,10 +8,10 @@ include_once 'header.php';
 <main class="main-content">
     <div class="abas">
         <p>Filtrar:</p>
-        <form class="form-espera" action="em_espera.php">
+        <form class="form-espera" action="monitoria_em_espera.php">
             <button class="buttons">Em Espera</button>
         </form>
-        <form class="form-concluido" action="concluido.php">
+        <form class="form-concluido" action="monitoria_concluido.php">
             <button class="buttons">Concluído</button>
         </form>
         

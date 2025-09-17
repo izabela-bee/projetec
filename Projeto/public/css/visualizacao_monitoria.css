@@ -15,27 +15,6 @@ form {
     align-items: center;
 }
 
-.Sair-monitoria{
-    position: absolute;
-    top: 10rem;
-    background-color: #979797;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(219, 219, 219);
-    border-radius: 50%;
-    left: 2rem;
-  }
-  
-  .Sair-monitoria:hover {
-    transition: 0.3s;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-
 /* Contêiner principal do formulário */
 .container-formulario {
     position: relative;
@@ -126,7 +105,6 @@ form {
 
 .linha-formulario.largura-total {
     align-items: first baseline;
-    margin: 0;
     width:100%;
     height: 100%;
   }
@@ -138,15 +116,14 @@ form {
 .corpo2{
     width: 60%;
     height: 279px;
-    margin-bottom: 3.3rem;
 }
 
 #inputData, #inputSala, #inputHorario, #inputMaterias{
     color: black;
   }
-#areaTextoMateriais {
-    color: black;
-    height: 279px;
+  #areaTextoMateriais {
+  color: black;
+  height: 279px;
 
 }
 
@@ -187,163 +164,4 @@ form {
         flex: 1 1 100%; 
     }
 }
-
-.modal-overlay {
-    display: none; /* escondido por padrão */
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Caixa do pop-up */
-  .modal-box {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  }
-  
-  .modal-box h3 {
-    margin-bottom: 15px;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-  .modal-box button {
-    margin: 5px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn-confirmar {
-    background: #28a745;
-    color: white;
-  }
-  
-  .btn-cancelar {
-    background: #dc3545;
-    color: white;
-  }
-
-/* Modal-Sair */
-
-  .modal-overlay-sair {
-    display: none; /* escondido por padrão */
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Caixa do pop-up */
-  .modal-box-sair {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  }
-  
-  .modal-box-sair h3 {
-    margin-bottom: 15px;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-  .modal-box-sair button {
-    margin: 5px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn-confirmar-sair {
-    background: #28a745;
-    color: white;
-  }
-  
-  .btn-cancelar-sair {
-    background: #dc3545;
-    color: white;
-  }
-
-  .botao-desencricao-monitoria{
-    position: absolute;
-    right: 2rem;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    background-color: red;
-    bottom: 1.7rem;
-  }
-
-  .botao-desencricao-monitoria:hover {
-    transition: 0.3s;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-
-  .modal-overlay-desinscrever {
-    display: none; /* escondido por padrão */
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Caixa do pop-up */
-  .modal-box-desinscrever {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  }
-  
-  .modal-box-desinscrever h3 {
-    margin-bottom: 15px;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-  .modal-box-desinscrever button {
-    margin: 5px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn-confirmar-desinscrever {
-    background: #28a745;
-    color: white;
-  }
-  
-  .btn-cancelar-desinscrever {
-    background: #dc3545;
-    color: white;
-  }
 

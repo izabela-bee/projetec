@@ -23,7 +23,7 @@ include_once 'header.php';
 
                     <div class="options-popup" id="optionsPopup">
                         <ul>
-                            <li><a href="#" class="popup-option" data-action="editar">Visualizar</a></li>
+                            <li><a href="visualizacao_monitoria.php" class="popup-option" data-action="editar">Visualizar</a></li>
                             <li><a href="#" class="popup-option" data-action="excluir" id="linkSair">Desinscrever</a></li>
                         </ul>
                     </div>
@@ -59,7 +59,7 @@ include_once 'header.php';
 <?php
 
 
-$scripts = ["minhas_monitorias_inscritasJS/minhas_monitorias_inscritas"];
+$scripts = ["minhas_monitoriaJS/minhas_monitorias_inscritas", "minhas_monitoriaJS/minhas_monitorias_excluir"];
 include_once 'footer.php';
 
 ?>

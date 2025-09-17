@@ -1,15 +1,10 @@
 <?php 
+
 $nameCSS = "adminPage";
 $titlePage = "Página de Admin";
 
 include_once "header.php";
-session_start();
 
-// Se for um usuário comum
-if ($_SESSION['permissao'] != 'adminif') {
-    header("Location: inicial.html");
-    exit;
-}
 ?>
 
 <main class="main-admin">
