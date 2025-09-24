@@ -3,15 +3,21 @@ $titlePage = 'Minhas Monitorias';
 $nameCSS = "minhas_monitorias";
 
 include_once 'header.php';
+session_start();
+// Se for um usuário comum
+if ($_SESSION['registro'] != '0072222') {
+    header("Location: inicial.php");
+    exit;
+}
 ?>
 
 <main class="main-content">
     <div class="abas">
         <p>Filtrar:</p>
-        <form class="form-espera" action="em_espera.php">
+        <form class="form-espera" action="monitoria_em_espera.php">
             <button class="buttons">Em Espera</button>
         </form>
-        <form class="form-concluido" action="concluido.php">
+        <form class="form-concluido" action="monitoria_concluido.php">
             <button class="buttons">Concluído</button>
         </form>
         
