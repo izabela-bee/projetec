@@ -12,7 +12,7 @@ include_once 'header.php';
     <form class="container-formulario" id="form-monitoria" method="POST" action="#">
         <div class="cabecalho-formulario">
             <div class="cabecalho-formulario-nome cabecalho-destaque">Ricardo Dias</div>
-            <div class="cabecalho-formulario-disciplina cabecalho-destaque">Matemática</div>
+            <div class="cabecalho-formulario-disciplina cabecalho-destaque  ">Matemática</div>
             <div class="cabecalho-formulario-info cabecalho-destaque">INFO 2</div>
         </div>
         <div class="corpo-formulario">

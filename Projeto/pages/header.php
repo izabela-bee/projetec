@@ -24,7 +24,6 @@
                     <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
                     <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                     <a href="adminPage.php"> <li  class="cabecalho-navegacao-menu-elemento">Admin page</li></a>
-                    <a href="minhas_monitorias_inscritas.php"> <li class="cabecalho-navegacao-menu-elemento">Minhas monitorias inscritas</li></a>
                 </ul>
             </div>
             <a href="inicial.php">
@@ -36,7 +35,7 @@
                 <div class="menu-quebra">
                     <ul class="cabecalho-navegacao-menu-perfil-elementos aberto">
                         <a href='perfil.php' class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Meu Perfil</li></a>
-                        <a href="registrar.php" class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Log out</li></a>
+                        <a href="logout.php" class="perfil"><li class="cabecalho-navegacao-menu-perfil-elemento">Log out</li></a>
                     </ul>
                 </div>
             </div>
