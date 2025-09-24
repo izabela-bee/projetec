@@ -6,7 +6,10 @@ include_once "header.php";
 session_start();
 // Se for um usuário comum
 if ($_SESSION['permissao'] != 'adminif') {
-    header("Location: inicial.php");
+    echo "<script>
+        alert('Você não possui acesso à página que tentou acessar.');
+        window.location.href = 'inicial.php';
+    </script>";
     exit;
 }
 ?>
