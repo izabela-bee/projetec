@@ -24,6 +24,7 @@
                     <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
                     <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                     <a href="adminPage.php"> <li  class="cabecalho-navegacao-menu-elemento">Admin page</li></a>
+                    <a href="minhas_monitorias_inscritas.php"> <li class="cabecalho-navegacao-menu-elemento">Minhas monitorias inscritas</li></a>
                 </ul>
             </div>
             <a href="inicial.php">

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const divs = secao.querySelector('.disciplina-header');
       const btn = secao.querySelector('.toggle-btn');
       const cards = secao.querySelector('.cards-container');
+      const seta = secao.querySelector('.toggle-btn')
   
       if (btn && cards || divs) {
         btn.addEventListener('click', () => {
@@ -37,6 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.classList.toggle('rotate');
       });
 
+      seta.addEventListener('click', () => {
+        const isClosed = cards.dataset.closed === 'true';
+
+        cards.style.maxHeight = isClosed ? '2000px' : '0';
+        cards.style.opacity = isClosed ? '1' : '0';
+        cards.style.marginTop = isClosed ? '20px' : '0';
+
+        cards.dataset.closed = (!isClosed).toString();
+        btn.classList.toggle('rotate');
+    });
       }
     });
 });
