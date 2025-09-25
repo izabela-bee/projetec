@@ -1,8 +1,6 @@
 <?php
-
 $pageTitle = "Página de Chat";
 $nameCSS = "chat";
-
 include_once "header.php";
 ?>
 
@@ -99,8 +97,8 @@ include_once "header.php";
                 <img class="icone-contato" src="../public/img/fotosPerfil/perfilPadrao.png">
             </div>
         </div>
-        <div class="fundo">
-            
+        <!-- testar se isso aqui ta funcionando -->
+        <div class="fundo" <img src="gato_trabalhando.gif" alt="gato mexendo num computador" width="600px" height="600px">>
             <div class="cabecalho-fundo">
                 <img class="icone-cabecalho" src="../public/img/fotosPerfil/perfilPadrao.png" alt="icone">
                 <div class="nome-titulo-monitor">
@@ -135,13 +133,11 @@ include_once "header.php";
                     </label>
                 </form>
             </div>
-            
         </div>
     </main>
 
 <?php
-    
     $scripts = [];
     include_once "footer.php";
-
 ?>
+
