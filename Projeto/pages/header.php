@@ -27,7 +27,7 @@
                 <ul class="cabecalho-navegacao-menu-elementos">
                     <a href="disciplinas.php" ><li  class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
                     <a href="chat.php"><li  class="cabecalho-navegacao-menu-elemento">Chat</li></a>
-                    <a href="feedback.php"><li  class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
+                    <a href="FAQ.php"><li  class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
                     <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
                     <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                 </ul>

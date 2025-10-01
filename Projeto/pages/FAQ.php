@@ -3,10 +3,6 @@
     $titlePage = "Página de FAQs";
 
     include_once "header.php";
-    if (isset($_SESSION['status'])) {
-        header('Location: login.php?mensagem=usuario_nao_esta_logado');
-        exit;
-    }
 ?>
     <main>
         <div class="faq-barra-pesquisa secao-pesquisa">
@@ -24,9 +20,6 @@
                         <div class="faq-card-header">Para agendar uma monitoria, você deve entrar em contato com um dos
                             monitores da disciplina desejada, verificando a disponibilidade dele e informando a matéria
                             da qual você tem dúvidas.</div>
-                        <div class="faq-card-body">
-                            Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica.
-                        </div>
                     </div>
                 </div>
             </section>
@@ -40,7 +33,6 @@
                     <div class="faq-card">
                         <div class="faq-card-header">É necessário verificar na página de monitores se há um monitor da
                             disciplina desejada</div>
-
                     </div>
                 </div>
             </section>
