@@ -61,6 +61,7 @@ main{
     width: 300px;
     height: 85px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 .caixa-nome-lucas{
     background-color: #D9D9D9;
@@ -130,6 +131,28 @@ main{
     height: 85px;
     width: 20px;
 }
+.caixa-quimica{
+    background-color: #07e589;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 225px;
+    height: 85px;
+    width: 20px;
+}
+.caixa-fisica{
+    background-color: #6707e5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 225px;
+    height: 85px;
+    width: 20px;
+}
 .icone-cabecalho{
     width: 45px;
     height: 50px;
@@ -172,7 +195,7 @@ a {
     border-bottom: 1px solid black;
 }
 
-.mensagens-geral {
+.mensagens-geral{
     max-width: 35%;
     background-color: #f0f0f0;
     padding: 14px 18px;
@@ -182,7 +205,7 @@ a {
     text-align: initial;
 }
   
-.mensagens-geral .texto {
+.mensagens-geral .texto{
     margin: 0;
     font-size: 14px;
     color: #1b1b1b;
@@ -248,4 +271,17 @@ input[type="button"]{
 label{
     display: flex;
     align-items: center;
+}
+.imagem-gato{
+    opacity: 0.5;
+    position: absolute;
+    align-self: center;
+    margin-top: 80px;
+}
+#texto{
+    position: absolute;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    left: 36%;
+    top: 22%;
 }
