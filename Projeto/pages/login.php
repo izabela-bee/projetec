@@ -36,6 +36,7 @@
                 <input class="principal-formulario-submit" id="entrar" name="entrar" value="Entrar" type="submit">
 
             </form>
+            <a href="login_admin.php">Mudar login para administrador</a>
         </section>
     </main>
 
