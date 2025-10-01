@@ -3,15 +3,7 @@ $nameCSS = "adminPage";
 $titlePage = "Página de Admin";
 
 include_once "header.php";
-session_start();
-// Se for um usuário comum
-if ($_SESSION['permissao'] != 'adminif') {
-    echo "<script>
-        alert('Você não possui acesso à página que tentou acessar.');
-        window.location.href = 'inicial.php';
-    </script>";
-    exit;
-}
+
 ?>
 
 <main class="main-admin">

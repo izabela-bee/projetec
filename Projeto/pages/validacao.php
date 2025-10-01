@@ -27,4 +27,8 @@ elseif (isset($users[$username]) && $users[$username] === $password) {
 else {
 	echo "Credenciais inválidas!";
 }
+
+$senha = $_POST['senha'];
+
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 ?>

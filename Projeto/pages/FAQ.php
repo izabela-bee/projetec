@@ -3,7 +3,10 @@
     $titlePage = "Página de FAQs";
 
     include_once "header.php";
-
+    if (isset($_SESSION['status'])) {
+        header('Location: login.php?mensagem=usuario_nao_esta_logado');
+        exit;
+    }
 ?>
     <main>
         <div class="faq-barra-pesquisa secao-pesquisa">

@@ -1,11 +1,6 @@
 <?php
     $titlePage = 'Página Inicial';
     $nameCSS = 'inicial';
-    session_start();
-    if (isset($_SESSION['username'])) {
-	    header('Location: login.php');
-	    exit;
-     }
     include_once "header.php";
 ?>
 

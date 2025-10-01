@@ -3,13 +3,8 @@ $titlePage = 'Minhas Monitorias';
 $nameCSS = "minhas_monitorias";
 
 include_once 'header.php';
-session_start();
-// Se for um usuário comum
-if ($_SESSION['registro'] != '0072222') {
-    echo "<script>
-        alert('Você não possui acesso à página que tentou acessar.');
-        window.location.href = 'inicial.php';
-    </script>";
+if($_SESSION['status'] !== 'Monitor'){
+    header('Location: inicial.php?mensagem=usuario_sem_permissao_acesso');
     exit;
 }
 ?>

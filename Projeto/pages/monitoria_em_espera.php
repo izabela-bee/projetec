@@ -3,6 +3,10 @@ $titlePage = 'Minhas Monitorias';
 $nameCSS = "minhas_monitorias";
 
 include_once 'header.php';
+if($_SESSION['status'] !== 'Monitor'){
+    header('Location: inicial.php?mensagem=usuario_sem_permissao_acesso');
+    exit;
+}
 ?>
 
 <main class="main-content">

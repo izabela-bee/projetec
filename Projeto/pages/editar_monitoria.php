@@ -3,6 +3,11 @@ $titlePage = 'Editando/Criando Monitoria';
 $nameCSS = "editar_monitoria";
 
 include_once 'header.php';
+if($_SESSION['status'] !== 'Monitor'){
+    header('Location: inicial.php?mensagem=usuario_sem_permissao_acesso');
+    exit;
+}
+
 ?>
 
 <main class="card-grid">

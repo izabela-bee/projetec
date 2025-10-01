@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    // Se for um usuário comum
+    if (!isset($_SESSION['status'])) {
+        header('Location: login.php?mensagem=usuario_nao_esta_logado');
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,11 +25,11 @@
             <div class="cabecalho-navegacao-menu">
                 <img class="cabecalho-navegacao-menu-imagem" src="../public/img/menuItens/menu-hamburguer.png" alt="Menu hamburguer para ser aberto">
                 <ul class="cabecalho-navegacao-menu-elementos">
-                    <a href="disciplinas.php"><li class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
-                    <a href="chat.php"><li class="cabecalho-navegacao-menu-elemento">Chat</li></a>
-                    <a href="FAQ.php"><li class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
-                    <a href="monitores.php"><li class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
-                    <a href="minhas_monitorias.php"> <li class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
+                    <a href="disciplinas.php" ><li  class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
+                    <a href="chat.php"><li  class="cabecalho-navegacao-menu-elemento">Chat</li></a>
+                    <a href="feedback.php"><li  class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
+                    <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
+                    <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                 </ul>
             </div>
             <a href="inicial.php">
@@ -39,5 +47,3 @@
             </div>
         </nav>
     </header>
-
-
