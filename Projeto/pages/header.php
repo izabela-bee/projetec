@@ -17,13 +17,11 @@
             <div class="cabecalho-navegacao-menu">
                 <img class="cabecalho-navegacao-menu-imagem" src="../public/img/menuItens/menu-hamburguer.png" alt="Menu hamburguer para ser aberto">
                 <ul class="cabecalho-navegacao-menu-elementos">
-                    <a href="disciplinas.php" ><li  class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
-                    <a><li  class="cabecalho-navegacao-menu-elemento">Agenda</li></a>
-                    <a href="chat.php"><li  class="cabecalho-navegacao-menu-elemento">Chat</li></a>
-                    <a href="feedback.php"><li  class="cabecalho-navegacao-menu-elemento">Feedback</li></a>
-                    <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
-                    <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
-                    <a href="adminPage.php"> <li  class="cabecalho-navegacao-menu-elemento">Admin page</li></a>
+                    <a href="disciplinas.php" ><li class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
+                    <a href="chat.php"><li class="cabecalho-navegacao-menu-elemento">Chat</li></a>
+                    <a href="feedback.php"><li class="cabecalho-navegacao-menu-elemento">Feedback</li></a>
+                    <a href="monitores.php" ><li class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
+                    <a href="minhas_monitorias.php"> <li class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
                 </ul>
             </div>
             <a href="inicial.php">
@@ -41,3 +39,4 @@
             </div>
         </nav>
     </header>
+
