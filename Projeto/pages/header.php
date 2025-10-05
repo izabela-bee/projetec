@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo !empty($titlePage) ? $titlePage : 'MoniFácil'; ?></title>
     <link rel="stylesheet" href="../public/css/menu.css">
-    <link rel="stylesheet" href="../public/css/modal.css">
     <link rel="icon" href="../public/img/menuItens/icone.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../public/css/<?php echo !empty($nameCSS) ? $nameCSS : ''; ?>.css">
 </head>
 
@@ -25,11 +25,19 @@
             <div class="cabecalho-navegacao-menu">
                 <img class="cabecalho-navegacao-menu-imagem" src="../public/img/menuItens/menu-hamburguer.png" alt="Menu hamburguer para ser aberto">
                 <ul class="cabecalho-navegacao-menu-elementos">
-                    <a href="disciplinas.php" ><li  class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
-                    <a href="chat.php"><li  class="cabecalho-navegacao-menu-elemento">Chat</li></a>
-                    <a href="FAQ.php"><li  class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
-                    <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
-                    <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
+                    <?php if($_SESSION['status'] === 'Administrador'): ?>
+                        <a href="adminPage.php" ><li  class="cabecalho-navegacao-menu-elemento">AdminPage</li></a>
+                    <?php else: ?>
+                        <a href="disciplinas.php" ><li  class="cabecalho-navegacao-menu-elemento">Disciplinas</li></a>
+                        <a href="chat.php"><li  class="cabecalho-navegacao-menu-elemento">Chat</li></a>
+                        <a href="FAQ.php"><li  class="cabecalho-navegacao-menu-elemento">FAQ's</li></a>
+                        <a href="monitores.php" ><li  class="cabecalho-navegacao-menu-elemento">Monitores</li></a>
+                        <a href="minhas_monitorias_inscritas.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias Inscritas</li></a>
+                        <?php if($_SESSION['status'] === 'Monitor'): ?>
+                            <a href="minhas_monitorias.php"> <li  class="cabecalho-navegacao-menu-elemento">Minhas Monitorias</li></a>
+                        <?php else: ?>
+                        <?php endif;?>:
+                    <?php endif; ?>
                 </ul>
             </div>
             <a href="inicial.php">

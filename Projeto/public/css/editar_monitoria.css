@@ -99,7 +99,7 @@ form {
 }
 
 .linha-formulario input[type="text"],
-.linha-formulario textarea {
+.linha-formulario textarea, .linha-formulario input[type="date"] {
     flex-grow: 1; 
     padding: 8px 12px;
     border: 2px solid var(--cor-borda);
@@ -112,7 +112,7 @@ form {
 }
 
 .linha-formulario input[type="text"]::placeholder,
-.linha-formulario textarea::placeholder {
+.linha-formulario textarea::placeholder, .linha-formulario input[type="date"]::placeholder {
     color: var(--cor-texto-cinza);
 }
 

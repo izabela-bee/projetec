@@ -14,6 +14,10 @@ a {
 .principal{
     background-color: white;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 87vh;
     padding: 50px;
 }
@@ -55,6 +59,7 @@ a {
     width: 440px;
     display: flex;
     flex-flow: column wrap;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -71,29 +76,15 @@ a {
 }
 
 .principal-secao2-card-imagem{
-    margin: 20px 0;
-    width: 250px;
-    height: 250px;
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat; 
+    width: 16rem;
+    height: 16rem; 
+    object-fit: cover; 
     border-radius: 50%;
 }
 
-.leticia {
-    background-image: url('../img/fotosPerfil/leticia.jpg');
-}
-
-.gabriela{
-    background-image: url('../img/fotosPerfil/gabriela.jpg');
-}
-
-.bernardo{
-    background-image: url('../img/fotosPerfil/bernardo-bento.jpeg');
-}
 
 .principal-secao2-card-titulo{
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 10px 0;
     font-weight: 300;
 }

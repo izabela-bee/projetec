@@ -3,7 +3,9 @@ $nameCSS = "adminPage";
 $titlePage = "Página de Admin";
 
 include_once "header.php";
-
+if($_SESSION['status'] !== 'Administrador'){
+    header('Location: inicial.php?mensagem=usuario_sem_permissao_acesso');
+}
 ?>
 
 <main class="main-admin">

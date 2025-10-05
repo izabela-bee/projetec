@@ -25,7 +25,7 @@
             <div class="principal-secao-titulo">
                 <h2 class="principal-secao-titulo-conteudo">Login</h2>
             </div>
-            <form class="principal-formulario" method="POST" action="../src/controllers/login_backend.php" data-form>
+            <form class="principal-formulario" method="POST" action="../src/controllers/login_aluno_backend.php" data-form>
 
                 <label for="registro" class="principal-formulario-label">Registro Acadêmico:</label>
                 <input id="registro" class="principal-formulario-input" name="registro" type="text" required>
@@ -41,9 +41,10 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
 
 <?php
-    $scripts = ['loginJs/login', 'loginJs/loginMensagensErro'];
+    $scripts = ['loginJs/login', 'loginJs/loginMensagensErro', 'loginJs/loginMensagensSucesso'];
     include_once "footer.php";
     session_start();
     if(isset($_SESSION['status'])){

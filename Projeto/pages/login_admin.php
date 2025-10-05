@@ -25,7 +25,7 @@
             <div class="principal-secao-titulo">
                 <h2 class="principal-secao-titulo-conteudo">Login Administrador</h2>
             </div>
-            <form class="principal-formulario" method="POST" action="../src/controllers/login_backend.php" data-form>
+            <form class="principal-formulario" method="POST" action="../src/controllers/login_admin_backend.php" data-form>
 
                 <label for="registro" class="principal-formulario-label">SIAPE:</label>
                 <input id="registro" class="principal-formulario-input" name="siape" type="text" required>

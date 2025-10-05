@@ -7,6 +7,7 @@ export const mensagens_erro = (mensagem) => {
         position: "center", 
         style:{ 
            background: "#ff0000",
+           zIndex: 9999999,
         },
         stopOnFocus: true, // Prevents dismissing of toast on hover
     }).showToast();

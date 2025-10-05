@@ -9,12 +9,11 @@ a{
 
 .cabecalho {
     position: relative;
-    z-index: 9999;
 }
 
 .cabecalho-navegacao{
     position: fixed;
-    z-index: 9999;
+    z-index: 9000;
     top: 0;
     width: 100vw;
     background-color: var(--cor-menu);

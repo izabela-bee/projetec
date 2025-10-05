@@ -42,6 +42,9 @@
 
 .formulario-superior-label-img{
     width: 13rem;
+    height: 13rem; 
+    object-fit: cover; 
+    border-radius: 50%;
 }
 
 .formulario-superior-label-img:hover{

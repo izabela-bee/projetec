@@ -11,7 +11,7 @@ Email varchar(50),
 Curso varchar (50),
 Sala varchar (3),
 E_Monitor boolean,
-Foto_Perfil varchar (50)
+Foto_Perfil varchar (200)
 );
 
 create table if not exists Monitoria(
@@ -66,16 +66,16 @@ desc Monitoria;
 
 INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
 VALUES
-('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, NULL),
-('0079411', 'Ana Luísa Nunes', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', FALSE, NULL),
-('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, NULL),
-('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, NULL),
-('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, NULL),
-('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, NULL),
-('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, NULL),
-('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, NULL),
-('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, NULL),
-('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE, NULL);
+('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079411', 'Ana Luísa Nunes', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE,'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg');
 
 INSERT INTO Administrador (SIAPE, Senha) VALUES ('0097214', 'senhaabc');
 

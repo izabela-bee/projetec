@@ -13,7 +13,7 @@ form {
     justify-content: center;
     height: 87vh;
     align-items: center;
-    gap: 40px;
+    gap: 15rem;
 }
 
 /* Contêiner principal do formulário */
@@ -21,8 +21,8 @@ form {
     position: relative;
     width: 760px; 
     height: 700px;
-    max-width: 90%; 
-    margin: auto; 
+    max-width: 60%; 
+    margin: 1rem 0; 
     border: 1px solid black;
     overflow: hidden;
 }
@@ -80,7 +80,7 @@ form {
 }
 
 .linha-formulario input[type="text"],
-.linha-formulario textarea, #areaTextoFeedback {
+.linha-formulario textarea, #areaTextoFeedback, .linha-formulario input[type="date"] {
     padding: 8px 12px;
     border: 2px solid var(--cor-borda);
     font-size: 1em;
@@ -92,7 +92,7 @@ form {
 }
 
 .linha-formulario input[type="text"]::placeholder,
-.linha-formulario textarea::placeholder {
+.linha-formulario textarea::placeholder, .linha-formulario input[type="date"]::placeholder {
     color: var(--cor-texto-cinza);
 }
 
@@ -122,8 +122,10 @@ form {
 
 
 .container-lateral {
+    color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 400px;
 }
@@ -139,24 +141,27 @@ form {
 
 .tabela-alunos td {
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 10px 10px;
     font-size: 14px;
 }
 
 .box-lateral {
     background-color: var(--cor-fundo-cinza);
-    min-height: 150px;
+    overflow-y: scroll;
+    max-height: 10rem;
     border: 1px solid black;
 }
 
 #areaTextoFeedback {
     height: 280px;
+    width: 25rem;
 }
 
 .btn-salvar {
     background-color: #28a745;
     color: white;
     height: 70px;
+    margin-top: 2.5rem;
     width: 200px;
     font-weight: bold;
     font-size: 20px;

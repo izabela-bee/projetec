@@ -62,7 +62,3 @@ monitorias.forEach((monitoria, i) => {
     })
   })
 })
-
-function fecharModal() {
-  resultado.innerHTML = '';
-}
