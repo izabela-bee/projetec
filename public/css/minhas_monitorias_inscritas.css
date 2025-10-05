@@ -1,0 +1,250 @@
+body{
+    background-color:var(--cor-main);
+  }
+  
+  .abas{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .aba-espera{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 150px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aba-espera:hover{
+    background-color: #cccccc;
+  }
+  
+  .aba-espera.selecionado{
+    background-color: #cccccc;
+  }
+  
+  .aba-concluido{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 150px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aba-concluido:hover{
+    background-color: #cccccc;
+  }
+  
+  .aba-concluido.selected{
+    background-color: #cccccc;
+  }
+  
+  .card {
+      width: 322px;
+      height: 210px;
+      border: 3px solid black;
+      border-radius: 8px;
+      box-shadow: 2px 2px 0px #000;
+      overflow: hidden;
+      background-color: white;
+    }
+  
+  .card-concluido{
+    
+  }
+  
+  .card-grid{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 15px;
+    justify-content: center;
+  }  
+  
+  .card-top {
+    background-color: #00b6f1;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .edit-icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .edit-icon:hover{
+    opacity: 0.8;
+    transition: 0.7s;
+  }
+  
+  .edit-image {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .options-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .card-content {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  
+  .options-popup {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 120px;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+  
+  .options-popup.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .options-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .options-popup li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .options-popup .popup-option {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .options-popup .popup-option:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+  }
+  
+  .card-content {
+    padding: 15px 20px;
+  }
+  
+  .info-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .info-line p {
+    margin: 0;
+  }
+  
+  /* Estilos para o Botão de Adicionar */
+  .botao-adicionar {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem; 
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px 14px 10px;   
+    background-color: var(--cor-menu); 
+    color: white;   
+    transform: translateY(10%);
+    font-size: 45px; 
+    border: 3px solid var(--cor-margem); 
+    border-radius: 50%; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    z-index: 999; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .botao-adicionar:hover {
+    background-color: var(--cor-hover); /
+  }
+  
+  /* Modal-Sair */
+  
+  .modal-overlay-sair {
+    display: none; /* escondido por padrão */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Caixa do pop-up */
+  .modal-box-sair {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .modal-box-sair h3 {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .modal-box-sair button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-confirmar-sair {
+    background: #28a745;
+    color: white;
+  }
+  
+  .btn-cancelar-sair {
+    background: #dc3545;
+    color: white;
+  }
+  
