@@ -15,7 +15,7 @@ if (basename($_SERVER['PHP_SELF']) !== 'login.php') {
 <script>
     setTimeout(() => {
         const currentPage = window.location.pathname.split("/").pop();
-        if(currentPage !== "editar_monitoria.php" && currentPage !== 'relatorio.php' && currentPage !==  'modal.php'){
+        if(currentPage !== "editar_monitoria.php" && currentPage !== 'relatorio.php' && currentPage !==  'modal.php' && currentPage !== 'visualizacao_monitoria.php' && currentPage !== 'visualizacao_monitor.php'){
             window.history.replaceState({}, document.title, window.location.pathname);
         }
         

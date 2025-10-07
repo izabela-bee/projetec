@@ -67,7 +67,7 @@ require_once __DIR__ . '/../src/controllers/minhas_monitorias_backend.php';
         <!-- Repita mais cards conforme necessário -->
     </div>
 </main>
-</main>
+
 <button class="botao-adicionar" id="botaoAdicionar">
     +
 </button>
