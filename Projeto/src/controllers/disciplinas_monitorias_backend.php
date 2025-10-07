@@ -43,13 +43,15 @@ foreach($resultado_monitorias as $monitoria){
     $data_formatada = DateTime::createFromFormat('Y-m-d', $monitoria['Data'])->format('d/m/Y');
     $horario_formatado = substr($monitoria['Horario'], 0, 5);
 
-    $monitorias[$materia_selecionada] = [
+    $monitorias[$monitoria['ID_Monitoria']] = [
+        'disciplina' => $materia_selecionada,
         'nome' => $resultado_monitor['Nome'],
         'curso' => $resultado_monitor['Curso'],
         'horario' => $horario_formatado,
         'data' => $data_formatada,
         'conteudos' => $conteudos_divididos,
         'cor' => $cor,
-        'id' => $monitoria['ID_Monitoria']
+        'id' => $monitoria['ID_Monitoria'],
+        'concluida' => $monitoria['Concluida']
     ];
 }

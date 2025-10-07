@@ -6,12 +6,13 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+$registro_academico = $_SESSION['registro'];
+
 require_once __DIR__ . '/../utils/con_db.php';
 require_once __DIR__ . '/../utils/cores_monitor.php';
 require_once __DIR__ . '/../utils/lista_professores.php';
 
 $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
-$registro_academico = $_SESSION['registro'] ?? null;
 
 if (!$id) {
     die("ID de monitoria inválido.");
@@ -59,6 +60,7 @@ $resultado_monitor = $stmt_monitor->fetch(PDO::FETCH_ASSOC);
 $foto_monitor = $resultado_monitor['Foto_Perfil'] ?? '';
 $nome_monitor = $resultado_monitor['Nome'] ?? '';
 $curso_monitor = $resultado_monitor['Curso'] ?? '';
+$id_monitor = $resultado_monitoria['Registro_Academico'];
 
 $cor = $cores_lista_monitorias[$materia_selecionada_monitoria] ?? '#ccc';
 $professores = $professores_monitorias[$materia_selecionada_monitoria] ?? [];
