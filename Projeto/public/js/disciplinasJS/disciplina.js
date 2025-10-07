@@ -53,12 +53,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const monitorias = document.querySelectorAll('.card-monitoria');
-const resultado = document.getElementById('resultado')
+const resultado = document.getElementById('resultado');
 
-monitorias.forEach((monitoria, i) => {
-  monitoria.addEventListener(('click'),(e) => {
-    fetch('modal.php').then(response => response.text()).then((data) => {
-      resultado.innerHTML = data
-    })
-  })
-})
+monitorias.forEach(monitoria => {
+  monitoria.addEventListener('click', async () => {
+    try {
+      const response = await fetch('modal.php');
+      if (!response.ok) throw new Error('Erro ao carregar modal.');
+      
+      const data = await response.text();
+      resultado.innerHTML = data;
+
+      // Exemplo: se o modal tiver um ID para aparecer com efeito
+      const modal = document.getElementById('modal');
+      modal?.classList.add('show');
+    } catch (error) {
+      console.error(error);
+    }
+  });
+});

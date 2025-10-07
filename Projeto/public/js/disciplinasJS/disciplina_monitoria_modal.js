@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona todos os containers de cards
-    const cards = document.querySelectorAll(".cards-container");
+    const cards = document.querySelectorAll(".card-monitoria");
 
     cards.forEach(card => {
         card.addEventListener("click", () => {

@@ -9,5 +9,8 @@ export const mensagensErroLogin = {
     'excluir_erro': "Ocorreu um erro na exclusão dessa determinada monitoria",
     'id_invalido': "O id dessa monitoria é inválido",
     'atualizacao_erro': 'Ocorreu um erro na atualizacao da monitoria',
-    'relatorio_atualizado_erro': 'Ocorreu um erro na atualização do relatório'
+    'relatorio_atualizado_erro': 'Ocorreu um erro na atualização do relatório',
+    'erro_na_inscricao': 'Ocorreu um erro na sua inscrição da monitoria',
+    'erro_na_delecao': 'Ocorreu um erro na hora de se desinscrever',
+    'desinscricao_erro': 'Ocorreu um erro na hora de se desinscrever'
 };
