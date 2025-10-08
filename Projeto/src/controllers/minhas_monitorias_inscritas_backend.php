@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../utils/cores_monitor.php';
 require_once __DIR__ . '/../utils/con_db.php';
 
-
 $registro_academico = $_SESSION['registro'];
 $lista_final = [];
 
@@ -44,7 +43,7 @@ foreach ($resultado_monitorias_inscritas as $monitoria) {
         'disciplina' => $resultado_monitoria['Disciplina'],
         'sala' => $resultado_monitoria['Localizacao'],
         'data' => $data_formatada,
-        'concluida' => $resultado_monitoria['Concluida'],
+        'concluida' => (int) $resultado_monitoria['Concluida'],
         'id' => $monitoria['ID_Monitoria']
     ];
 
