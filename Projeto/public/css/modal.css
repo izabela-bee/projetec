@@ -113,7 +113,12 @@
 .conteudos{
     position: absolute;
     top: 28.5rem;
-    right: 12rem;
+    right: 6rem;
+}
+
+#conteudos {
+    width: 21rem;
+    text-align: center;
 }
 
 #conteudos{
