@@ -44,7 +44,8 @@ foreach($resultado_infos_monitores as $monitor){
         'foto_perfil' => $monitor['Foto_Perfil'],
         'telefone' => $resultado_tel_monitor['telefone'],
         'disciplina' => $resultado_materia_monitor['disciplina_monitorada'],
-        'cor_monitor' => $cor
+        'cor_monitor' => $cor,
+        'id' => $monitor['Registro_Academico']
     ];
 }
 
