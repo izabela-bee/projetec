@@ -1,0 +1,139 @@
+create database IF NOT EXISTS BD_Monifacil;
+use BD_Monifacil;
+
+--- drop database BD_Monifacil;
+
+create table if not exists Aluno(
+Registro_Academico varchar(7) primary key,
+Nome varchar(50),
+Senha varchar(50),
+Email varchar(50),
+Curso varchar (50),
+Sala varchar (3),
+E_Monitor boolean,
+Foto_Perfil varchar (200)
+);
+
+create table if not exists Monitoria(
+ID_Monitoria int primary key auto_increment,
+Registro_Academico varchar(7),
+Publico_Alvo varchar(50),
+Localizacao varchar(50),
+Data date,
+Horario time,
+Conteudos_Abordados text,
+Feedback varchar(255),
+Concluida boolean,
+Disciplina varchar(50),
+foreign key (Registro_Academico) references Aluno(Registro_Academico)
+);
+
+ALTER TABLE Aluno
+ADD COLUMN ID_Monitoria INT,
+ADD FOREIGN KEY (ID_Monitoria) REFERENCES Monitoria(ID_Monitoria);
+
+create table if not exists Monitora(
+Registro_Academico varchar(7) primary key,
+disciplina_monitorada varchar(50)
+);
+
+create table if not exists Administrador(
+SIAPE varchar(7) primary key,
+Senha varchar(50)
+);
+
+create table if not exists Telefone(
+Registro_Academico varchar (7),
+telefone varchar(10),
+primary key (Registro_Academico, telefone),
+foreign key (Registro_Academico) references Aluno(Registro_Academico)
+);
+
+create table if not exists Frequenta(
+Registro_Academico varchar(7),
+ID_Monitoria int,
+primary key (Registro_Academico, ID_Monitoria),
+foreign key (Registro_Academico) references Aluno(Registro_Academico),
+foreign key (ID_Monitoria) references Monitoria(ID_Monitoria)
+);
+
+create table if not exists Alunos_Inscritos(
+Registro_Academico varchar(7) primary key,
+Presenca_confirmada boolean,
+Presenca_requisitada boolean,
+ID_Monitoria int,
+foreign key(ID_Monitoria) references Monitoria(ID_Monitoria)
+);
+
+show tables;
+desc Aluno;
+desc Monitoria;
+
+
+
+INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
+VALUES
+('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079411', 'Ana Luísa Nunes', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
+('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, null),
+('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, null),
+('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, null),
+('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, null),
+('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE, null);
+
+INSERT INTO Administrador (SIAPE, Senha) VALUES ('0097214', 'senhaabc');
+
+INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
+VALUES
+('0089410', 'Lucas Andrade', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
+('0089411', 'Marina Costa', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
+('0089412', 'Thiago Fernandes', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', TRUE, "https://i.ibb.co/jvn4dCyp/miguel.webp" ),
+('0089413', 'Isabela Moura', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
+('0089414', 'Rafael Silveira', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', TRUE, "https://i.ibb.co/jvn4dCyp/miguel.webp" ),
+('0089415', 'Camila Ribeiro', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
+('0089416', 'Henrique Pires', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', TRUE, "https://i.ibb.co/whGdfp8J/ricardo.webp"),
+('0089417', 'Gustavo Lima', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/whGdfp8J/ricardo.webp"),
+('0089418', 'Bruna Martins', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', TRUE,"https://i.ibb.co/Xrm6wsqG/ana.jpg"),
+('0089419', 'Letícia Carvalho', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/Zzh5TNwb/janaina.jpg");
+
+
+INSERT INTO Telefone (Registro_Academico, telefone) VALUES
+('0079410', '3199991111'),
+('0079411', '3199992222'),
+('0079412', '3199993333'),
+('0079413', '3199994444'),
+('0079414', '3199995555'),
+('0079415', '3199996666'),
+('0079416', '3199997777'),
+('0079417', '3199998888'),
+('0079418', '3199999999'),
+('0079419', '3199980000'),
+
+('0089410', '3199971111'),
+('0089411', '3199972222'),
+('0089412', '3199973333'),
+('0089413', '3199974444'),
+('0089414', '3199975555'),
+('0089415', '3199976666'),
+('0089416', '3199977777'),
+('0089417', '3199978888'),
+('0089418', '3199979999'),
+('0089419', '3199960000');
+
+INSERT INTO Monitora (Registro_Academico, disciplina_monitorada) VALUES
+('0089410', 'Matemática-2'),
+('0089411', 'História-3'),
+('0089412', 'Português-2'),
+('0089413', 'Biologia-3'),
+('0089414', 'Eletrônica A.-2'),
+('0089415', 'WEB-3'),
+('0089416', 'Química-2'),
+('0089417', 'Filosofia-3'),
+('0089418', 'Banco de dados-2'),
+('0089419', 'Física-3');
+
+
+SELECT * FROM Aluno;
