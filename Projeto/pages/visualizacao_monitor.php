@@ -28,7 +28,7 @@ require_once __DIR__ . '/../src/controllers/visualizacao_monitor_backend.php';
                 </div>
                 <div class="linha-formulario">
                     <label for="inputHorario">Número de Monitorias Atuais:</label>
-                    <input type="text" id="inputHorario" value="5" disabled value="<?= htmlspecialchars($numero_monitorias); ?>">
+                    <input type="text" id="inputHorario" disabled value="<?= htmlspecialchars($numero_monitorias); ?>">
                 </div>
                 <div class="linha-formulario">
                     <label for="inputHorario">Avaliação:</label>

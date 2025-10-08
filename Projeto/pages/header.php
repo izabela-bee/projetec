@@ -5,6 +5,13 @@
         header('Location: login.php?mensagem=usuario_nao_esta_logado');
         exit;
     }
+
+    $paginaAtual = basename($_SERVER['PHP_SELF']);
+
+    if ($_SESSION['status'] === 'Administrador' && $paginaAtual !== 'adminPage.php') {
+        header('Location: adminPage.php?mensagem=acesso_invalido');
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
