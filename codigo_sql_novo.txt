@@ -73,31 +73,31 @@ desc Monitoria;
 
 INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
 VALUES
-('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
-('0079411', 'Ana Luísa Nunes', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
-('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
-('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
-('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/JhD8Qhb/bernardo-bento.jpg'),
-('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, null),
-('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, null),
-('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, null),
-('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, null),
-('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE, null);
+('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://ibb.co/dsbjWPsP/andre-goncalves.jpg'),
+('0079411', 'Patrícia Yoki', 'senha123', 'patriciay@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://ibb.co/0jdVNFwC/patricia-yoki.jpg'),
+('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, 'https://ibb.co/JwkYKT74/giovana-almeida.jpg'),
+('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://ibb.co/W4j5XJbK/gabriel-bastos.jpg'),
+('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://ibb.co/9HT5CNYZ/joao-silva.jpg'),
+('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://ibb.co/Kp5jrGCb/julia-paula.jpg'),
+('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, 'https://ibb.co/S7vGNt4Z/lucas-duarte.jpg'),
+('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://ibb.co/b51w6rTc/nathalia-dias.jpg'),
+('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://ibb.co/cSvf4XHy/rafael-carneiro.jpg'),
+('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://ibb.co/392n3DfJ/sofia-reis.jpg');
 
 INSERT INTO Administrador (SIAPE, Senha) VALUES ('0097214', 'senhaabc');
 
 INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
 VALUES
-('0089410', 'Lucas Andrade', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
-('0089411', 'Marina Costa', 'senha123', 'analn@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
-('0089412', 'Thiago Fernandes', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', TRUE, "https://i.ibb.co/jvn4dCyp/miguel.webp" ),
-('0089413', 'Isabela Moura', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
-('0089414', 'Rafael Silveira', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', TRUE, "https://i.ibb.co/jvn4dCyp/miguel.webp" ),
-('0089415', 'Camila Ribeiro', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/Tx5ryq2J/jessica.jpg"),
-('0089416', 'Henrique Pires', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', TRUE, "https://i.ibb.co/whGdfp8J/ricardo.webp"),
-('0089417', 'Gustavo Lima', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/whGdfp8J/ricardo.webp"),
-('0089418', 'Bruna Martins', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', TRUE,"https://i.ibb.co/Xrm6wsqG/ana.jpg"),
-('0089419', 'Letícia Carvalho', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/Zzh5TNwb/janaina.jpg");
+('0089410', 'Lucas Andrade', 'senha123', 'lucasa@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://ibb.co/93Zy1C6n/lucas-andrade.jpg"),
+('0089411', 'Marina Costa', 'senha123', 'marinac@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://ibb.co/KxJpN6zg/marina-costa.jpg"),
+('0089412', 'Thiago Fernandes', 'senha123', 'thiagof@ifmg.edu.br', 'ELET-II', '103', TRUE, "https://ibb.co/LTsTphX/thiago-fernandes.jpg" ),
+('0089413', 'Isabela Moura', 'senha123', 'isabelam@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://ibb.co/Xfp0v042/isabela-moura.jpg"),
+('0089414', 'Rafael Silveira', 'senha123', 'rafaels@ifmg.edu.br', 'ADM-II', '302', TRUE, "https://ibb.co/JW4RwCx4/rafael-silveira.jpg" ),
+('0089415', 'Camila Ribeiro', 'senha123', 'camilar@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://ibb.co/DgKJ26Ch/camila-ribeiro.jpg"),
+('0089416', 'Henrique Pires', 'senha123', 'henriquep@ifmg.edu.br', 'INFO-II', '303', TRUE, "https://ibb.co/dwv0NbPn/henrique-pires.jpg"),
+('0089417', 'Gustavo Lima', 'senha123', 'gustavol@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://ibb.co/nM4mLWxX/gustavo-lima.jpg"),
+('0089418', 'Bruna Martins', 'senha123', 'brunam@ifmg.edu.br', 'ADM-II', '302', TRUE,"https://ibb.co/FLwCnZ6x/bruna-martins.jpg"),
+('0089419', 'Letícia Carvalho', 'senha123', 'leticiac@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://ibb.co/bgtcTVn0/leticia-carvalho.jpg");
 
 
 INSERT INTO Telefone (Registro_Academico, telefone) VALUES
