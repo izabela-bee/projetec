@@ -1,7 +1,7 @@
 /* principal */
 .principal {
     background-color: #fff;
-    width: 100vw;
+    width: 100%;
     height: 87vh;
     display: flex;
     justify-content: center;
@@ -135,4 +135,47 @@
     cursor: pointer;
     background-color: var(--cor-fundo);
     transition: 0.3s;
+}
+
+@media (max-width: 1550px) {
+    .formulario-superior {
+        margin-right: 15rem;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .formulario-superior-titulo {
+        font-size: 2rem;
+    }
+
+    .formulario-superior-label-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .formulario-superior-infosUser-nome {
+        font-size: 1.9rem;
+    }
+
+    .formulario-superior-infosUser-registro {
+        font-size: 1.2rem;
+    }
+
+    .formulario-inferior {
+        margin-left: 3rem;
+    }
+
+    .formulario-inferior-container-labels-label-input {
+        width: 17rem;
+        font-size: 1.05rem;
+    }
+
+    .formulario-inferior-container-labels-label-titulo {
+        font-size: 1.1rem;
+    }
+
+    .formulario-inferior-container-submit {
+        font-size: 1.3rem;
+        padding: 1rem 1.7rem;
+    }
 }
