@@ -5,14 +5,10 @@ a {
     color: black;
 }
 
-
-
-
-
 /* MAIN */
 
 .principal{
-    background-color: white;
+    background-color: white;    
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -91,4 +87,58 @@ a {
 
 .principal-secao2-card-turma{
     font-size: 1.3rem;
+}
+
+@media (max-width: 1550px) {
+
+    /* Espaço vertical e centralização */
+    .principal {
+        padding: 20px;
+        height: 87vh;
+    }
+
+    /* Títulos mais equilibrados */
+    .principal-secao1-titulo {
+        font-size: 2rem;
+    }
+
+    .principal-secao1-subtitulo {
+        font-size: 1.6rem;
+    }
+
+    .principal-secao1-texto {
+        font-size: 1.2rem;
+    }
+
+    /* Cards se aproximam e se reorganizam */
+    .principal-secao2 {
+        margin-top: 2rem;
+        gap: 3.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* Cards menores para caberem melhor */
+    .principal-secao2-card {
+        width: 320px;
+        padding: 25px;
+        gap: 0.3rem;
+    }
+
+    /* Imagens proporcionais */
+    .principal-secao2-card-imagem {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .principal-secao2-card-nome {
+        font-size: 1.6rem;
+    }
+
+    .principal-secao2-card-titulo {
+        font-size: 1.2rem;
+    }
+
+    .principal-secao2-card-turma {
+        font-size: 1.1rem;
+    }
 }
