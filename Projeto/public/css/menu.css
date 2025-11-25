@@ -1,0 +1,143 @@
+@import url('global.css');
+
+/* CABECALHO */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+.cabecalho-navegacao{
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    width: 100vw;
+    background-color: var(--cor-menu);
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu-imagem-wrapper {
+    padding: 1.35vw;            /* controla o tamanho do hover */
+    display: inline-flex;
+}
+
+.menu-imagem-wrapper:hover {
+    background-color: var(--cor-fundo);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.cabecalho-navegacao-menu-imagem{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+.cabecalho-navegacao-menu-elementos{
+    position: fixed;
+    display: block;
+    top: 9vh;
+    transform: translate(-100%);
+    z-index: 9999;
+}
+.cabecalho-navegacao-menu-elemento{
+    list-style-type: none;
+    width: 220px;
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 0px 30px 30px 0px;
+    border-bottom: 3px solid black;
+    z-index: 100;
+}
+
+.cabecalho-navegacao-menu-elemento:hover{
+    background-color: #d9d9d9;
+    transition: 1.2s;
+    cursor: pointer;
+}
+
+
+
+.perfil{
+    color: white;
+    text-decoration: none;
+}
+
+
+.cabecalho-navegacao-menu-perfil-elementos{
+    
+    position: absolute;
+    right: 0;
+    top: 9vh;
+    transform: translateX(100%);
+    z-index: 100;
+}
+
+.cabecalho-navegacao-menu-perfil-elemento{
+    list-style-type: none;
+    width: 170px;
+    text-align: center;
+    padding: 15px 25px;
+    background-color: var(--cor-fundo);
+    color: #fff;
+    border-bottom: 3px solid black;
+}
+
+.cabecalho-navegacao-menu-perfil-elemento:hover{
+    background-color: var(--cor-hover);
+    transition: 1.2s;
+    cursor: pointer;
+}
+
+
+
+
+.cabecalho-navegacao-menu-logo{
+    width: 220px;
+    height: 70px;
+}
+
+.cabecalho-navegacao-menu-perfil{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.cabecalho-navegacao-menu-perfil-imagem{
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.menu-wrapper-perfil {
+    padding: 2vh 1vw;            
+    display: inline-flex;
+}
+
+.menu-wrapper-perfil:hover {
+    background-color: var(--cor-fundo);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+@media (max-width: 1568px){
+    .menu-wrapper-perfil {
+        padding: 1.7vh 1vw;            
+        display: inline-flex;
+    }
+    .menu-imagem-wrapper {
+        padding: 2.3vh 1.35vw;            
+        display: inline-flex;
+    }
+}

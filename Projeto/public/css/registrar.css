@@ -1,0 +1,203 @@
+@import 'global.css';
+
+body{
+    background-color: #4AB91B;
+}
+
+/* LOGO */
+
+.cabecalho{
+    padding: 2rem;
+    position: absolute;
+    left: 2%;
+}
+
+.cabecalho-logo-conteudo{
+    width: 18rem;
+    height: 5.3rem;
+}
+
+/* FORMULÁRIO DE REGISTRO */
+
+.principal{
+    width: 30%;
+    min-width: 30rem;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    align-self: center;
+    
+}
+
+.principal-secao{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    height: 80%;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 1px 2px 9px 3px rgba(0,0,0,0.42);
+}
+
+.principal-secao-titulo{
+    position: absolute;
+    top: 6%;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.principal-formulario{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    margin-top: 2rem;
+}
+
+.principal-formulario-label{
+    font-size: 1.2rem;
+    align-items: start;
+    font-weight: 500;
+    width: 100%;
+    padding: 30px 0 5px 0;
+}
+
+.principal-formulario-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-formulario-input {
+    width: 100%;
+    padding: 10px 4px;
+    font-size: 1rem;
+    background-color: var(--cinza-input);
+    border-radius: 8px;
+}
+
+.principal-formulario-input:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.338);
+    transition: 0.5s;
+}
+
+.principal-formulario-submit{
+    padding: 20px;
+    width: 60%;
+    margin: 75px auto 0 auto;
+    border-radius: 20px;
+    background-color: var(--verde-claro);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.principal-formulario-submit:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    color: black;
+    outline: none;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* diferença entre as senhas inseridas */
+
+.erro-mensagem {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .principal {
+        width: 60%;
+    }
+
+    .principal-secao{
+        margin-top: 4rem;
+    }
+
+    .principal-formulario-input {
+        width: 100%;
+    }
+
+    .principal-formulario-submit {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        position: inherit;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .principal-secao-titulo{
+        top: 1%;
+    }
+
+    .principal-formulario-label {
+        padding-top: 30px;
+    }
+
+    .principal{
+        justify-content: start;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .principal-formulario-submit {
+        margin-top: 50px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-logo-conteudo {
+        width: 60%;
+    }
+
+    .principal-secao {
+        margin-top: 2rem;
+        height: 70%;
+        width: 80%;
+    }
+
+    .principal{
+        align-items: center;
+        min-width: 25rem;
+    }
+
+    .principal-secao-titulo{
+        font-size: 1.3rem;
+    }
+
+    .principal-formulario-label {
+        font-size: 1rem;
+    }
+
+    .principal-formulario-input {
+        font-size: 1rem;
+    }
+
+    .principal-formulario-submit {
+        padding: 15px;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}

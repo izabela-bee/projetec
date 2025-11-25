@@ -1,0 +1,152 @@
+create database IF NOT EXISTS BD_Monifacil;
+use BD_Monifacil;
+
+--- drop database BD_Monifacil;
+
+create table if not exists Aluno(
+Registro_Academico varchar(7) primary key,
+Nome varchar(50),
+Senha varchar(50),
+Email varchar(50),
+Curso varchar (50),
+Sala varchar (3),
+E_Monitor boolean,
+Foto_Perfil varchar (200)
+);
+
+create table if not exists Monitoria(
+ID_Monitoria int primary key auto_increment,
+Registro_Academico varchar(7),
+Publico_Alvo varchar(50),
+Localizacao varchar(50),
+Data date,
+Horario time,
+Capacidade_Alunos int,
+Quantidade_Inscritos int,
+Conteudos_Abordados text,
+Feedback varchar(255),
+Concluida boolean,
+Disciplina varchar(50),
+foreign key (Registro_Academico) references Aluno(Registro_Academico)
+);
+
+create table if not exists Monitora(
+Registro_Academico varchar(7) primary key,
+disciplina_monitorada varchar(50)
+);
+
+create table if not exists Administrador(
+SIAPE varchar(7) primary key,
+Senha varchar(50)
+);
+
+create table if not exists Telefone(
+Registro_Academico varchar (7),
+telefone varchar(11),
+primary key (Registro_Academico, telefone),
+foreign key (Registro_Academico) references Aluno(Registro_Academico)
+);
+
+create table if not exists Frequenta(
+Registro_Academico varchar(7),
+ID_Monitoria int,
+primary key (Registro_Academico, ID_Monitoria),
+foreign key (Registro_Academico) references Aluno(Registro_Academico),
+foreign key (ID_Monitoria) references Monitoria(ID_Monitoria)
+);
+
+create table if not exists Alunos_Inscritos(
+ID_Inscricao int primary key auto_increment,
+Registro_Academico varchar(7),
+Presenca_confirmada boolean,
+Presenca_requisitada boolean,
+ID_Monitoria int,
+foreign key(ID_Monitoria) references Monitoria(ID_Monitoria),
+foreign key(Registro_Academico) references Aluno(Registro_Academico)
+);
+
+show tables;
+desc Aluno;
+desc Monitoria;
+
+
+
+INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
+VALUES
+('0079410', 'Andre Gonçalves', 'senha123', 'andreg@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://i.ibb.co/ym1ncVh1/homem7.jpg'),
+('0079411', 'Patrícia Yoki', 'senha123', 'patriciay@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/1t0fmnH7/mulher3.jpg'),
+('0079412', 'Giovana Almeida', 'senha123', 'giovanaa@ifmg.edu.br', 'ELET-II', '103', FALSE, 'https://i.ibb.co/mVqgSZJD/mulher4.jpg'),
+('0079413', 'Gabriel Bastos', 'senha123', 'gabrielb@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/pjNwLmYH/homem8.jpg'),
+('0079414', 'João Silva', 'senha123', 'joaos@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/1JzRPw1Z/homem2.jpg'),
+('0079415', 'Julia de Paula', 'senha123', 'juliap@ifmg.edu.br', 'ADM-III', '102', FALSE, 'https://i.ibb.co/5hTp15mb/mulher5.jpg'),
+('0079416', 'Lucas Duarte', 'senha123', 'lucasd@ifmg.edu.br', 'INFO-II', '303', FALSE, 'https://i.ibb.co/YBksq3j0/homem.jpg'),
+('0079417', 'Nathália Dias', 'senha123', 'nathaliad@ifmg.edu.br', 'ELET-III', '301', FALSE, 'https://i.ibb.co/mVk3jLvx/mulher6.jpg'),
+('0079418', 'Rafael Carneiro', 'senha123', 'rafaelc@ifmg.edu.br', 'ADM-II', '302', FALSE, 'https://i.ibb.co/wr6jySF2/homem3.jpg'),
+('0079419', 'Sofia Reis', 'senha123', 'sofiar@ifmg.edu.br', 'INFO-III', '101', FALSE, 'https://i.ibb.co/tp9TZBP6/mulher7.jpg');
+
+INSERT INTO Administrador (SIAPE, Senha) VALUES ('0097214', 'senhaabc');
+
+INSERT INTO Aluno (Registro_Academico, Nome, Senha, Email, Curso, Sala, E_Monitor, Foto_Perfil)
+VALUES
+('0089410', 'Lucas Andrade', 'senha123', 'lucasa@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/XrPZny7m/homem4.jpg"),
+('0089411', 'Marina Costa', 'senha123', 'marinac@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/Ps4XfXYm/mulher8.jpg"),
+('0089412', 'Thiago Fernandes', 'senha123', 'thiagof@ifmg.edu.br', 'ELET-II', '103', TRUE, "https://i.ibb.co/ycRvHB1N/homem6.jpg" ),
+('0089413', 'Isabela Moura', 'senha123', 'isabelam@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/N6Rc5qzv/mulher9.jpg"),
+('0089414', 'Rafael Silveira', 'senha123', 'rafaels@ifmg.edu.br', 'ADM-II', '302', TRUE, "https://i.ibb.co/pjNwLmYH/homem8.jpg" ),
+('0089415', 'Camila Ribeiro', 'senha123', 'camilar@ifmg.edu.br', 'ADM-III', '102', TRUE, "https://i.ibb.co/h186znWb/mulher2.jpg"),
+('0089416', 'Henrique Pires', 'senha123', 'henriquep@ifmg.edu.br', 'INFO-II', '303', TRUE, "https://i.ibb.co/DHTWF2xK/homem10.jpg"),
+('0089417', 'Gustavo Lima', 'senha123', 'gustavol@ifmg.edu.br', 'ELET-III', '301', TRUE, "https://i.ibb.co/rBXByfR/homem9.jpg"),
+('0089418', 'Bruna Martins', 'senha123', 'brunam@ifmg.edu.br', 'ADM-II', '302', TRUE,"https://i.ibb.co/4Z5gyYQ8/mulher.jpg"),
+('0089419', 'Letícia Carvalho', 'senha123', 'leticiac@ifmg.edu.br', 'INFO-III', '101', TRUE, "https://i.ibb.co/kscLxT8f/pessoaum.jpg");
+
+
+INSERT INTO Telefone (Registro_Academico, telefone) VALUES
+('0079410', '31999991111'),
+('0079411', '31999992222'),
+('0079412', '31999993333'),
+('0079413', '31999994444'),
+('0079414', '31999995555'),
+('0079415', '31999996666'),
+('0079416', '31999997777'),
+('0079417', '31999998888'),
+('0079418', '31999999999'),
+('0079419', '31999980000'),
+
+('0089410', '31999971111'),
+('0089411', '31999972222'),
+('0089412', '31999973333'),
+('0089413', '31999974444'),
+('0089414', '31999975555'),
+('0089415', '3199976666'),
+('0089416', '31999977777'),
+('0089417', '31999978888'),
+('0089418', '31999979999'),
+('0089419', '31999960000');
+
+INSERT INTO Monitora (Registro_Academico, disciplina_monitorada) VALUES
+('0089410', 'Matemática-2'),
+('0089411', 'História-3'),
+('0089412', 'Português-2'),
+('0089413', 'Biologia-3'),
+('0089414', 'Eletrônica A.-2'),
+('0089415', 'WEB-3'),
+('0089416', 'Química-2'),
+('0089417', 'Filosofia-3'),
+('0089418', 'Banco de dados-2'),
+('0089419', 'Física-3');
+
+CREATE TABLE IF NOT EXISTS Mensagens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    remetente_id VARCHAR(50) NOT NULL,
+    destinatario_id VARCHAR(50) NOT NULL,
+    conteudo TEXT NOT NULL,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    lida BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (remetente_id) REFERENCES Aluno(Registro_Academico) ON DELETE CASCADE,
+    FOREIGN KEY (destinatario_id) REFERENCES Aluno(Registro_Academico) ON DELETE CASCADE,
+    INDEX idx_conversation (remetente_id, destinatario_id),
+    INDEX idx_timestamp (data_hora)
+);
+
+use bd_monifacil;
+SELECT * FROM Aluno;

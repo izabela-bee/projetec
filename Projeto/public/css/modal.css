@@ -1,0 +1,146 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 9vh;
+    height: 91vh;
+    background: #fff;
+}
+
+/* CARD PRINCIPAL */
+.cor {
+    background: #fff;
+    width: 40rem;
+    max-width: 90vw;
+    border: 2px solid #727272;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+/* HEADER */
+.cor-header {
+    width: 100%;
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cor-header h2 {
+    font-size: 1.3rem;
+}
+.cor-header p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* CONTEÚDO ORGANIZADO EM GRID */
+.cor-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* BLOCO PADRÃO */
+.disciplina {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.disciplina p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.disciplina h2,
+#conteudos {
+    background: #dadada;
+    border-bottom: 2px solid #333;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: .4rem;
+}
+
+/* FOTO DO MONITOR */
+.foto-monitor {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    margin-left: .5rem;
+}
+
+/* LINHA ESPECIAL DO MONITOR */
+.monitor h2 {
+    display: flex;
+    align-items: center;
+}
+
+/* BOTÕES INFERIORES */
+
+.sair {
+    background: black;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    border: none;
+}
+
+.sair:hover {
+    cursor: pointer;
+    background: #555;
+}
+
+.cor-botao label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.custom-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.rodape-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 0 2rem;
+}
+
+
+
+/* ----------- MEDIA QUERY PARA 125% (1536px) ----------- */
+
+@media screen and (max-width: 1536px) {
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-inscricao,
+    .btn-close {
+        margin: 0;
+        padding: 8px 16px;
+    }
+}
